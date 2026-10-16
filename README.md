@@ -3,7 +3,7 @@
 An on-device scam-call gate for family money, built with Strands Decider 2B and Amazon Bedrock.
 Work in progress for the AWS Agent Experience Hackathon (Strands Decider).
 
-This commit contains only the test harness for running Decider 2B on a machine, in Docker.
+This commit contains only the test harness for running Decider 2B in Docker, on a laptop or an EC2 box (`scripts/aws/`).
 The agent, the `rolling_risk_gate` pattern, the demo page and the benchmark come next.
 
 ## Quick start: test Decider on this machine
@@ -44,6 +44,15 @@ Use Docker Desktop with the WSL2 backend and a current NVIDIA driver. Run the co
   On Windows check Docker Desktop settings and update the NVIDIA driver.
 - Out of memory: the RTX 3050 has 6 GB, and the model needs about 5 GB plus working space. Close games and browsers
   and try again, or use the `cpu` profile.
+
+## EC2
+
+Best speed per dollar is `g6.xlarge` (NVIDIA L4, bf16). `c7i.2xlarge` is the CPU option. Both are reached through SSM only, with no open ports.
+
+```bash
+COOLOFF_SG=<no-inbound sg> COOLOFF_SUBNET=<subnet> scripts/aws/launch.sh gpu   # or cpu
+scripts/aws/teardown.sh                                                        # terminate when done
+```
 
 ## Model
 

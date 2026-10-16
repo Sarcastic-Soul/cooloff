@@ -7,6 +7,9 @@ ARG TORCH=cpu
 # CUDA 12.6 wheels run on NVIDIA drivers 525 and newer. Plain PyPI torch is now built for CUDA 13,
 # which needs driver 580 or newer, so we pin the older build to work on more laptops.
 ARG CUDA_INDEX=https://download.pytorch.org/whl/cu126
+# strands-decider from GitHub, pinned. The PyPI release (0.1.0) is older: it has no cpu_kernels.py (faster CPU
+# conv) and no `cuda` extra (flash-linear-attention Triton kernels, which the GPU path needs for speed).
+ARG DECIDER_REF=6039cf8b64c6074e75804000c07ac3d4cce795f7
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 
@@ -26,7 +29,8 @@ RUN if [ "$TORCH" = "cpu" ]; then \
       uv pip install torch --index-url "$CUDA_INDEX"; \
     fi
 
-RUN uv pip install strands-decider
+RUN if [ "$TORCH" = "gpu" ]; then EXTRA="[cuda]"; else EXTRA=""; fi; \
+    uv pip install "strands-decider${EXTRA} @ git+https://github.com/strands-labs/strands-decider@${DECIDER_REF}"
 
 WORKDIR /app
 COPY scripts/smoke.py /app/smoke.py
