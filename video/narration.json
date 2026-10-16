@@ -1,14 +1,14 @@
 {
  "grandchild_gift_cards": {
-  "start": "Margaret is on the phone. A caller says he is her grandson.",
-  "amber": "Pressure shows up first. Decider reads every sentence on this machine. Nothing goes to the cloud.",
-  "red": "Now a claimed identity and a request for secrecy. Two different kinds of signal. The gate freezes payments.",
-  "held": "Margaret asks her assistant to buy a five hundred dollar gift card. The Strands agent tries. The hold stops it, and the balance stays the same.",
-  "messages": "Only now does Bedrock get involved. It writes a calm note for Margaret, and a text for her family with the caller's exact words.",
-  "end": "Every byte sent to Bedrock left after the freeze."
+  "start": "Margaret gets a call. The caller says he is her grandson.",
+  "amber": "Decider reads each sentence on this device. Nothing goes to the cloud.",
+  "red": "Now a claimed identity and a plea for secrecy. Two kinds of signal. The gate freezes payments.",
+  "held": "Margaret asks her assistant for a five hundred dollar gift card. The hold stops it, and the balance stays put.",
+  "messages": "Only now does Bedrock write a calm note for Margaret, and a text for her family.",
+  "end": "Every byte sent to the cloud left after the freeze."
  },
  "real_pharmacy": {
-  "start": "A normal call from the pharmacy. Margaret pays her electric bill while she listens.",
+  "start": "A normal call. Margaret pays a bill while she listens.",
   "end": "No freeze. The payment goes through.",
   "trim_after": "agent_reply"
  }

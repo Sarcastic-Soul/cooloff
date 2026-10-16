@@ -31,14 +31,14 @@ def main(sid, out_dir):
         if k in cfg:
             w = out / f"nar_{k}.wav"
             dur = tts.synthesize(cfg[k], str(w), voice="af_heart", speed=1.0)
-            gaps[k], wavs[k] = int(dur * 1000 + 800), w
+            gaps[k], wavs[k] = int(dur * 1000 + 450), w
     qs = "&".join(f"gap_{k}={v}" for k, v in gaps.items()) + ("&trim_after=agent_reply" if cfg.get("trim_after") else "")
     frames = []
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(viewport={"width": 1920, "height": 1080})
         pg.goto(f"http://localhost:8765/?id={sid}&video=1&{qs}")
-        pg.wait_for_selector(".scenarios button")
+        pg.wait_for_selector("#play", state="attached")
         pg.wait_for_timeout(800)
         cdp = pg.context.new_cdp_session(pg)
 
