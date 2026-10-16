@@ -1,0 +1,50 @@
+# Pick one profile:
+#   docker compose --profile cpu up -d --build
+#   docker compose --profile gpu up -d --build
+# The Decider server has no password and listens on localhost inside its container,
+# so no port is published. Other containers share its network (network_mode: service:decider)
+# and scripts run inside it with `docker compose exec decider ...`.
+
+x-decider: &decider
+  container_name: decider
+  environment:
+    DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-hobson-v19}
+  volumes:
+    - decider-models:/models
+    - ./results:/results
+  restart: "no"
+
+services:
+  decider-cpu:
+    <<: *decider
+    profiles: ["cpu"]
+    build:
+      context: .
+      dockerfile: Dockerfile.decider
+      args:
+        TORCH: cpu
+    environment:
+      DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-hobson-v19}
+      DECIDER_DEVICE: cpu
+
+  decider-gpu:
+    <<: *decider
+    profiles: ["gpu"]
+    build:
+      context: .
+      dockerfile: Dockerfile.decider
+      args:
+        TORCH: gpu
+    environment:
+      DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-hobson-v19}
+      DECIDER_DEVICE: cuda
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  decider-models:

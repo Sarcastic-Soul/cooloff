@@ -1,0 +1,32 @@
+# Decider 2B server image. One Dockerfile, two builds:
+#   docker build --build-arg TORCH=cpu -f Dockerfile.decider .   (CPU only, small)
+#   docker build --build-arg TORCH=gpu -f Dockerfile.decider .   (NVIDIA GPU; torch brings its own CUDA libs)
+FROM python:3.12-slim
+
+ARG TORCH=cpu
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+
+ENV UV_SYSTEM_PYTHON=1 \
+    UV_LINK_MODE=copy \
+    PYTHONUNBUFFERED=1 \
+    HF_HOME=/models/hf
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends curl ca-certificates git \
+ && rm -rf /var/lib/apt/lists/*
+
+# torch first, so the right build is chosen before strands-decider pulls its own
+RUN if [ "$TORCH" = "cpu" ]; then \
+      uv pip install torch --index-url https://download.pytorch.org/whl/cpu; \
+    else \
+      uv pip install torch; \
+    fi
+
+RUN uv pip install strands-decider
+
+WORKDIR /app
+COPY scripts/smoke.py /app/smoke.py
+
+EXPOSE 8000
+CMD ["sh", "-c", "strands-decider serve ${DECIDER_MODEL} --port 8000 --device ${DECIDER_DEVICE}"]
