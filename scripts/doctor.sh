@@ -32,6 +32,10 @@ if command -v nvidia-smi >/dev/null 2>&1; then
   nvidia-smi --query-gpu=name,memory.total,memory.used,driver_version --format=csv,noheader
   free_mb=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits | head -1)
   echo "  free VRAM: ${free_mb} MB"
+  drv=$(nvidia-smi --query-gpu=driver_version --format=csv,noheader | head -1 | cut -d. -f1)
+  if [ "${drv:-0}" -lt 525 ] 2>/dev/null; then
+    bad "NVIDIA driver ${drv} is too old for the gpu image (needs 525 or newer). Update the driver, or use cpu mode."
+  fi
   if docker info 2>/dev/null | grep -qi nvidia || docker run --rm --gpus all python:3.12-slim true >/dev/null 2>&1; then
     ok "docker can use the GPU"
     if [ "${free_mb:-0}" -ge 5500 ]; then
