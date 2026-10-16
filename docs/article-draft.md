@@ -3,7 +3,7 @@
 Tags: #strands-decider-2b #policy
 
 Repo: https://github.com/Sarcastic-Soul/cooloff (Apache-2.0)
-Video: (link goes here after upload)
+Video: https://youtu.be/wrOpX6aKXsc
 
 **This is a simulation.** The bank is a mock, the callers are scripts, and the voices are text-to-speech. Cooloff does not
 listen to real calls or touch real accounts.
