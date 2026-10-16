@@ -7,7 +7,7 @@ requires-python = ">=3.11"
 license = { text = "Apache-2.0" }
 dependencies = [
   "strands-agents>=1.0",
-  "boto3>=1.35",
+  "boto3[crt]>=1.35",
   "pyyaml>=6.0",
   "fastapi>=0.115",
   "uvicorn>=0.30",

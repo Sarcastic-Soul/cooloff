@@ -1,0 +1,499 @@
+{
+ "script": {
+  "title": "Fake bank fraud team",
+  "kind": "scam",
+  "summary": "A caller claims to be the bank's fraud team and wants the money moved to a 'safe account'.",
+  "lines": [
+   {
+    "speaker": "caller",
+    "text": "Good afternoon, this is the fraud department at your bank. Is this Mrs. Margaret Hale?"
+   },
+   {
+    "speaker": "parent",
+    "text": "Yes, this is she."
+   },
+   {
+    "speaker": "caller",
+    "text": "We have found suspicious activity, and someone is trying to take money out of your savings right now."
+   },
+   {
+    "speaker": "parent",
+    "text": "Oh dear. What should I do?"
+   },
+   {
+    "speaker": "caller",
+    "text": "You must act immediately. We need you to move your savings into a safe account by wire transfer."
+   },
+   {
+    "speaker": "parent",
+    "text": "A wire transfer? I've never done that."
+   },
+   {
+    "speaker": "caller",
+    "text": "I will guide you. Please do not tell the tellers at your branch, because we believe one of them is involved."
+   },
+   {
+    "speaker": "parent",
+    "text": "I see. Alright, how much?"
+   },
+   {
+    "speaker": "caller",
+    "text": "All of it. Seven thousand dollars. Do it now before the thieves get there first."
+   }
+  ],
+  "payment_attempt": {
+   "after_line": 7,
+   "request": "Send $7,000 by wire to the safe account the bank gave me.",
+   "tool": "send_money",
+   "args": {
+    "payee": "Safe Holding Account",
+    "amount": 7000
+   }
+  },
+  "id": "fake_bank_safe_account"
+ },
+ "events": [
+  {
+   "type": "start",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "script": "fake_bank_safe_account",
+   "title": "Fake bank fraud department",
+   "kind": "scam",
+   "summary": "A caller claims to be the bank's fraud team and wants the money moved to a 'safe account'.",
+   "decider_mode": "replay",
+   "decider_model": "strands-decider-2B-qwen3.5-v1-2610",
+   "balance": 12450.0
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 0,
+   "speaker": "caller",
+   "text": "Good afternoon, this is the fraud department at your bank. Is this Mrs. Margaret Hale?",
+   "decider_ms": 3483.4,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.9458,
+     "known_bill_known_payee": 0.03,
+     "gift_cards_crypto_or_wire": 0.0092,
+     "remote_access_request": 0.0018,
+     "password_or_code_request": 0.0131
+    },
+    "impersonation": "bank_or_fraud_dept",
+    "impersonation_p": {
+     "none": 0.0877,
+     "relative_in_trouble": 0.0103,
+     "bank_or_fraud_dept": 0.8947,
+     "government": 0.0035,
+     "tech_support": 0.0013,
+     "romance": 0.002,
+     "prize": 0.0006
+    },
+    "secrecy": 0.0711,
+    "pressure": 0.525
+   },
+   "gate": {
+    "state": "amber",
+    "risk": 0.1617,
+    "levels": {
+     "payment_ask": 0.0169,
+     "impersonation": 0.6376,
+     "secrecy": 0.0427,
+     "pressure": 0.1466
+    },
+    "active": [
+     "impersonation"
+    ],
+    "step": 1,
+    "reason": "one signal: impersonation",
+    "changed": true,
+    "red_at_step": null
+   }
+  },
+  {
+   "type": "amber",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "text": "Something on this call sounds unusual. Take your time, and do not buy cards, share codes or send money yet.",
+   "note": "local message, nothing sent to the cloud"
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 1,
+   "speaker": "parent",
+   "text": "Yes, this is she."
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 2,
+   "speaker": "caller",
+   "text": "We have found suspicious activity, and someone is trying to take money out of your savings right now.",
+   "decider_ms": 3509.0,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.9158,
+     "known_bill_known_payee": 0.0087,
+     "gift_cards_crypto_or_wire": 0.0562,
+     "remote_access_request": 0.005,
+     "password_or_code_request": 0.0143
+    },
+    "impersonation": "bank_or_fraud_dept",
+    "impersonation_p": {
+     "none": 0.3667,
+     "relative_in_trouble": 0.0577,
+     "bank_or_fraud_dept": 0.5307,
+     "government": 0.0294,
+     "tech_support": 0.0076,
+     "romance": 0.0061,
+     "prize": 0.0018
+    },
+    "secrecy": 0.2004,
+    "pressure": 1.117
+   },
+   "gate": {
+    "state": "red",
+    "risk": 0.2198,
+    "levels": {
+     "payment_ask": 0.0579,
+     "impersonation": 0.6366,
+     "secrecy": 0.1088,
+     "pressure": 0.367
+    },
+    "active": [
+     "impersonation",
+     "pressure"
+    ],
+    "step": 2,
+    "reason": "two independent signals: impersonation, pressure",
+    "changed": true,
+    "red_at_step": 2
+   }
+  },
+  {
+   "type": "red",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "step": 2,
+   "reason": "two independent signals: impersonation, pressure",
+   "active": [
+    "impersonation",
+    "pressure"
+   ]
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 3,
+   "speaker": "parent",
+   "text": "Oh dear. What should I do?"
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 4,
+   "speaker": "caller",
+   "text": "You must act immediately. We need you to move your savings into a safe account by wire transfer.",
+   "decider_ms": 3541.5,
+   "answers": {
+    "payment_ask": "gift_cards_crypto_or_wire",
+    "payment_p": {
+     "none": 0.1286,
+     "known_bill_known_payee": 0.0069,
+     "gift_cards_crypto_or_wire": 0.8581,
+     "remote_access_request": 0.0027,
+     "password_or_code_request": 0.0037
+    },
+    "impersonation": "none",
+    "impersonation_p": {
+     "none": 0.5979,
+     "relative_in_trouble": 0.0517,
+     "bank_or_fraud_dept": 0.304,
+     "government": 0.0283,
+     "tech_support": 0.0066,
+     "romance": 0.0078,
+     "prize": 0.0038
+    },
+    "secrecy": 0.0665,
+    "pressure": 1.3618
+   },
+   "gate": {
+    "state": "red",
+    "risk": 0.4561,
+    "levels": {
+     "payment_ask": 0.6225,
+     "impersonation": 0.6078,
+     "secrecy": 0.1038,
+     "pressure": 0.544
+    },
+    "active": [
+     "impersonation",
+     "payment_ask",
+     "pressure"
+    ],
+    "step": 3,
+    "reason": "two independent signals: impersonation, pressure",
+    "changed": false,
+    "red_at_step": 2
+   }
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 5,
+   "speaker": "parent",
+   "text": "A wire transfer? I've never done that."
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 6,
+   "speaker": "caller",
+   "text": "I will guide you. Please do not tell the tellers at your branch, because we believe one of them is involved.",
+   "decider_ms": 3520.9,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.9459,
+     "known_bill_known_payee": 0.0125,
+     "gift_cards_crypto_or_wire": 0.0128,
+     "remote_access_request": 0.0056,
+     "password_or_code_request": 0.0232
+    },
+    "impersonation": "none",
+    "impersonation_p": {
+     "none": 0.8063,
+     "relative_in_trouble": 0.0482,
+     "bank_or_fraud_dept": 0.1208,
+     "government": 0.0137,
+     "tech_support": 0.0035,
+     "romance": 0.0063,
+     "prize": 0.0012
+    },
+    "secrecy": 0.6559,
+    "pressure": 0.6846
+   },
+   "gate": {
+    "state": "red",
+    "risk": 0.5317,
+    "levels": {
+     "payment_ask": 0.5528,
+     "impersonation": 0.5576,
+     "secrecy": 0.4903,
+     "pressure": 0.5198
+    },
+    "active": [
+     "impersonation",
+     "payment_ask",
+     "pressure",
+     "secrecy"
+    ],
+    "step": 4,
+    "reason": "two independent signals: impersonation, pressure",
+    "changed": false,
+    "red_at_step": 2
+   }
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 7,
+   "speaker": "parent",
+   "text": "I see. Alright, how much?"
+  },
+  {
+   "type": "parent_request",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "text": "Send $7,000 by wire to the safe account the bank gave me.",
+   "gate_state": "red"
+  },
+  {
+   "type": "held",
+   "t_net_voice": 0,
+   "t_net_agent": 3953,
+   "net_total": 3953,
+   "tool": "send_money",
+   "input": {
+    "payee": "safe account",
+    "amount": 7000
+   },
+   "gate": "red",
+   "balance": 12450.0,
+   "note": "the agent paused and is waiting for the family"
+  },
+  {
+   "type": "parent_message",
+   "t_net_voice": 2952,
+   "t_net_agent": 3953,
+   "net_total": 6905,
+   "text": "This doesn\u2019t look like your bank. Please stop any payment right away.  \nA message has been sent to your family so they can help.  \nYou\u2019re safe\u2014take your time.",
+   "bytes_sent": 592,
+   "sent": "Sentences the caller said:\n- Good afternoon, this is the fraud department at your bank. Is this Mrs. [PARENT]?\n- You must act immediately. We need you to move your savings into a safe account by wire transfer.",
+   "ms": 2845
+  },
+  {
+   "type": "family_text",
+   "t_net_voice": 5862,
+   "t_net_agent": 3953,
+   "net_total": 9815,
+   "text": "Your parent\u2019s payment of $7,000 to \u201csafe account\u201d was paused \u2014 this matches scam patterns.  \n\u201cGood afternoon, this is the fraud department at your bank. Is this Mrs. Margaret Hale?\u201d  \n\u201cYou must act immediately. We need you to move your savings into a safe account by wire transfer.\u201d  \nPlease call them now. Reply KEEP if the payment should stay blocked, or RELEASE if it\u2019s safe. We\u2019re here to help.",
+   "bytes_sent": 551,
+   "sent": "Held action: send_money {'payee': 'safe account', 'amount': 7000}\nThe call has two worrying moments, shown as {Q1} and {Q2}.",
+   "ms": 1619
+  },
+  {
+   "type": "incident_summary",
+   "t_net_voice": 9224,
+   "t_net_agent": 3953,
+   "net_total": 13177,
+   "text": "A caller impersonating the bank\u2019s fraud department contacted the parent, raising a gate amber by asking if they were Mrs. [PARENT]. The caller then raised gate red by claiming suspicious activity and demanding immediate action to move funds via wire transfer. The caller further raised gate red by instructing the parent not to inform bank tellers, alleging internal involvement. The system paused the payment request to transfer $7,000, and the account balance remained unchanged. The family responded with KEEP, and the payment remains cancelled.",
+   "bytes_sent": 973,
+   "sent": "Timeline:\n- Step 1: caller said \u201cGood afternoon, this is the fraud department at your bank. Is this Mrs. [PARENT]?\u201d (gate amber)\n- Step 2: caller said \u201cWe have found suspicious activity, and someone is trying to take money out of your savings right now.\u201d (gate red)\n- Step 3: caller said \u201cYou must act immediately. We need you to move your savings into a safe account by wire transfer.\u201d (gate red)\n- Step 4: caller said \u201cI will guide you. Please do not tell the tellers at your branch, because we believe one of them is involved.\u201d (gate red)\n- Held: send_money {'payee': 'safe account', 'amount': 7000}. Balance unchanged at $12,450.00.\n- The family replied KEEP and the payment stays cancelled.",
+   "ms": 1614
+  },
+  {
+   "type": "family_reply",
+   "t_net_voice": 9224,
+   "t_net_agent": 3953,
+   "net_total": 13177,
+   "text": "KEEP",
+   "note": "the family chose to keep the payment frozen"
+  },
+  {
+   "type": "agent_reply",
+   "t_net_voice": 9224,
+   "t_net_agent": 8323,
+   "net_total": 17547,
+   "text": "The transaction is held for family approval.",
+   "balance": 12450.0
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 9224,
+   "t_net_agent": 8323,
+   "net_total": 17547,
+   "idx": 8,
+   "speaker": "caller",
+   "text": "All of it. Seven thousand dollars. Do it now before the thieves get there first.",
+   "decider_ms": 3348.0,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.7774,
+     "known_bill_known_payee": 0.0339,
+     "gift_cards_crypto_or_wire": 0.1478,
+     "remote_access_request": 0.0118,
+     "password_or_code_request": 0.0291
+    },
+    "impersonation": "none",
+    "impersonation_p": {
+     "none": 0.8281,
+     "relative_in_trouble": 0.1187,
+     "bank_or_fraud_dept": 0.0195,
+     "government": 0.0098,
+     "tech_support": 0.0051,
+     "romance": 0.0062,
+     "prize": 0.0127
+    },
+    "secrecy": 0.0895,
+    "pressure": 1.4158
+   },
+   "gate": {
+    "state": "red",
+    "risk": 0.5017,
+    "levels": {
+     "payment_ask": 0.5091,
+     "impersonation": 0.5108,
+     "secrecy": 0.4422,
+     "pressure": 0.6325
+    },
+    "active": [
+     "impersonation",
+     "payment_ask",
+     "pressure",
+     "secrecy"
+    ],
+    "step": 5,
+    "reason": "two independent signals: impersonation, pressure",
+    "changed": false,
+    "red_at_step": 2
+   }
+  },
+  {
+   "type": "end",
+   "t_net_voice": 9224,
+   "t_net_agent": 8323,
+   "net_total": 17547,
+   "balance": 12450.0,
+   "final_state": "red",
+   "history": [],
+   "net": {
+    "voice_bytes": 9224,
+    "agent_bytes": 8323,
+    "total_bytes": 17547
+   },
+   "net_requests": [
+    {
+     "t": 1792166235.144,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 3953,
+     "tag": "agent"
+    },
+    {
+     "t": 1792166236.362,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 2952,
+     "tag": "voice"
+    },
+    {
+     "t": 1792166239.207,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 2910,
+     "tag": "voice"
+    },
+    {
+     "t": 1792166240.826,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 3362,
+     "tag": "voice"
+    },
+    {
+     "t": 1792166242.445,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 4370,
+     "tag": "agent"
+    }
+   ]
+  }
+ ],
+ "recorded": {
+  "decider_mode": "replay",
+  "decider_model": "strands-decider-2B-qwen3.5-v1-2610",
+  "seconds": 8.2
+ }
+}

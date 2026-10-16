@@ -1,0 +1,21 @@
+{
+ "secrecy": {
+  "type": "noul",
+  "instructions": "Does the sender ask the child to keep this conversation secret from parents or other adults?"
+ },
+ "move_platform": {
+  "type": "noul",
+  "instructions": "Does the sender ask the child to move the chat to another private app or channel?"
+ },
+ "personal_ask": {
+  "type": "choice",
+  "instructions": "What does the sender ask the child to share?",
+  "criteria": {
+   "none": "nothing personal is requested",
+   "name_or_school": "the child's full name, school or age",
+   "address_or_schedule": "the child's home address or when they are home alone",
+   "photos": "photos or video of the child",
+   "gifts_or_money": "gifts, game credits or money"
+  }
+ }
+}

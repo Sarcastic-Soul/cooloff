@@ -1,0 +1,50 @@
+{
+ "title": "Real bank (false alarm)",
+ "kind": "normal",
+ "summary": "A real bank warns Margaret about an odd charge and says it will never ask for a PIN or code. Decider reads the words PIN and password as an ask, so the gate freezes the payment. The family calls, sees it is real, and releases it.",
+ "lines": [
+  {
+   "speaker": "caller",
+   "text": "Hello, this is Margaret's bank calling about a small charge that looked unusual."
+  },
+  {
+   "speaker": "parent",
+   "text": "Oh? What charge is that?"
+  },
+  {
+   "speaker": "caller",
+   "text": "It was a twelve dollar purchase at a hardware store in another city. Nothing has been blocked."
+  },
+  {
+   "speaker": "parent",
+   "text": "I didn't go there."
+  },
+  {
+   "speaker": "caller",
+   "text": "Then please call the number on the back of your card and we will cancel it for you."
+  },
+  {
+   "speaker": "caller",
+   "text": "We will never ask for your PIN, your password or any codes on the phone, so please don't share them with anyone."
+  },
+  {
+   "speaker": "parent",
+   "text": "Alright, I'll call the number on my card. Thank you."
+  },
+  {
+   "speaker": "caller",
+   "text": "You're welcome. Have a good day."
+  }
+ ],
+ "payment_attempt": {
+  "after_line": 5,
+  "request": "Pay my usual phone bill of $45 to Northline Mobile.",
+  "tool": "pay_bill",
+  "args": {
+   "payee": "Northline Mobile",
+   "amount": 45
+  }
+ },
+ "id": "real_bank_alert",
+ "family_decision": "release"
+}

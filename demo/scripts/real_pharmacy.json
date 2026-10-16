@@ -1,0 +1,45 @@
+{
+ "title": "Real pharmacy call",
+ "kind": "normal",
+ "summary": "A normal call. Margaret asks the agent to pay her usual electric bill while she is on the phone.",
+ "lines": [
+  {
+   "speaker": "caller",
+   "text": "Hello, this is the pharmacy on Maple Street calling for Margaret Hale."
+  },
+  {
+   "speaker": "parent",
+   "text": "Yes, speaking."
+  },
+  {
+   "speaker": "caller",
+   "text": "Your prescription is ready for pickup. We are open until six this evening."
+  },
+  {
+   "speaker": "parent",
+   "text": "Wonderful, I'll come by after lunch."
+  },
+  {
+   "speaker": "caller",
+   "text": "Great. The copay is the usual twelve dollars, and you can pay at the counter."
+  },
+  {
+   "speaker": "parent",
+   "text": "That's fine. Thank you."
+  },
+  {
+   "speaker": "caller",
+   "text": "Have a lovely day, and see you this afternoon."
+  }
+ ],
+ "payment_attempt": {
+  "after_line": 4,
+  "request": "Pay my usual electric bill of $84 to Riverside Electric.",
+  "tool": "pay_bill",
+  "args": {
+   "payee": "Riverside Electric",
+   "amount": 84
+  }
+ },
+ "id": "real_pharmacy"
+}

@@ -1,0 +1,23 @@
+[
+ {"title": "A stranger grooming a child (written for training material)", "messages": [
+  "Hey, I saw your game clips, you are really good for your age.",
+  "How old are you, and what school do you go to?",
+  "Let's talk on a different app, this one is so boring.",
+  "Don't tell your mom or dad that we talk, they would not understand.",
+  "Send me a photo of you so I know you are real.",
+  "I can send you game credits if you tell me when you are home alone."]},
+ {"title": "A classmate planning homework", "messages": [
+  "Hey, did you finish the science worksheet?",
+  "I'm stuck on question four, can you explain it?",
+  "Want to meet at the library after school tomorrow?",
+  "My mom said I can come if your mom says okay too.",
+  "I'll bring my notes and a snack.",
+  "Cool, see you at three."]},
+ {"title": "A gaming friend (hard negative)", "messages": [
+  "Good game last night, that last round was crazy.",
+  "Want to join our team on the weekend tournament?",
+  "We usually talk on the team voice channel, I'll send you the invite.",
+  "Ask your parents first if it's okay to join.",
+  "Here is a screenshot of our final score.",
+  "Nice, talk tomorrow."]}
+]

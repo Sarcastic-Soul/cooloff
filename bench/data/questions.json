@@ -1,0 +1,39 @@
+{
+ "pressure": {
+  "type": "score",
+  "instructions": "How much pressure or urgency does the speaker put on the listener?",
+  "criteria": [
+   "No pressure",
+   "Some urgency",
+   "Strong threats or demands to act now"
+  ]
+ },
+ "payment_ask": {
+  "type": "choice",
+  "instructions": "What kind of payment or sensitive access is the speaker asking for?",
+  "criteria": {
+   "none": "no payment or access is requested",
+   "known_bill_known_payee": "an ordinary bill from a known company",
+   "gift_cards_crypto_or_wire": "gift cards, cryptocurrency or a wire transfer",
+   "remote_access_request": "installing software or sharing the screen",
+   "password_or_code_request": "a password, PIN or one-time code"
+  }
+ },
+ "impersonation": {
+  "type": "choice",
+  "instructions": "Who does the speaker claim to be?",
+  "criteria": {
+   "none": "no special identity is claimed",
+   "relative_in_trouble": "a relative who is in trouble",
+   "bank_or_fraud_dept": "a bank or fraud department",
+   "government": "a government agency",
+   "tech_support": "tech support",
+   "romance": "a romantic partner",
+   "prize": "a prize or lottery"
+  }
+ },
+ "secrecy": {
+  "type": "noul",
+  "instructions": "Does the speaker ask the listener to hide this from family or bank staff?"
+ }
+}

@@ -17,6 +17,7 @@ case "$MODE" in
 esac
 
 # Deep Learning AMIs already have docker and the NVIDIA toolkit. Plain Ubuntu needs docker installed.
+VOLSIZE=80; [ "$MODE" = gpu ] && VOLSIZE=160   # the GPU deep learning image alone fills about 55 GB
 USERDATA=$(mktemp)
 cat > "$USERDATA" <<'UD'
 #!/bin/bash
@@ -30,7 +31,7 @@ UD
 aws ec2 run-instances --region "$REGION" --image-id "$AMI" --instance-type "$TYPE" \
   --subnet-id "$SUBNET" --security-group-ids "$SG" \
   --iam-instance-profile Name=cooloff-decider-ssm \
-  --block-device-mappings 'DeviceName=/dev/sda1,Ebs={VolumeSize=80,VolumeType=gp3,DeleteOnTermination=true}' \
+  --block-device-mappings "DeviceName=/dev/sda1,Ebs={VolumeSize=${VOLSIZE},VolumeType=gp3,DeleteOnTermination=true}" \
   --metadata-options HttpTokens=required,HttpEndpoint=enabled \
   --user-data "file://$USERDATA" \
   --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=cooloff-decider-$MODE},{Key=project,Value=cooloff}]" 'ResourceType=volume,Tags=[{Key=project,Value=cooloff}]' \

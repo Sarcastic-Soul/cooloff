@@ -1,0 +1,487 @@
+{
+ "script": {
+  "title": "Real bank (false alarm)",
+  "kind": "normal",
+  "summary": "A real bank warns Margaret about an odd charge and says it will never ask for a PIN or code. Decider reads the words PIN and password as an ask, so the gate freezes the payment. The family calls, sees it is real, and releases it.",
+  "lines": [
+   {
+    "speaker": "caller",
+    "text": "Hello, this is Margaret's bank calling about a small charge that looked unusual."
+   },
+   {
+    "speaker": "parent",
+    "text": "Oh? What charge is that?"
+   },
+   {
+    "speaker": "caller",
+    "text": "It was a twelve dollar purchase at a hardware store in another city. Nothing has been blocked."
+   },
+   {
+    "speaker": "parent",
+    "text": "I didn't go there."
+   },
+   {
+    "speaker": "caller",
+    "text": "Then please call the number on the back of your card and we will cancel it for you."
+   },
+   {
+    "speaker": "caller",
+    "text": "We will never ask for your PIN, your password or any codes on the phone, so please don't share them with anyone."
+   },
+   {
+    "speaker": "parent",
+    "text": "Alright, I'll call the number on my card. Thank you."
+   },
+   {
+    "speaker": "caller",
+    "text": "You're welcome. Have a good day."
+   }
+  ],
+  "payment_attempt": {
+   "after_line": 5,
+   "request": "Pay my usual phone bill of $45 to Northline Mobile.",
+   "tool": "pay_bill",
+   "args": {
+    "payee": "Northline Mobile",
+    "amount": 45
+   }
+  },
+  "id": "real_bank_alert",
+  "family_decision": "release"
+ },
+ "events": [
+  {
+   "type": "start",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "script": "real_bank_alert",
+   "title": "Real bank warning (a false alarm)",
+   "kind": "normal",
+   "summary": "A real bank warns Margaret about an odd charge and says it will never ask for a PIN or code. Decider reads the words PIN and password as an ask, so the gate freezes the payment. The family calls, sees it is real, and releases it.",
+   "decider_mode": "replay",
+   "decider_model": "strands-decider-2B-qwen3.5-v1-2610",
+   "balance": 12450.0
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 0,
+   "speaker": "caller",
+   "text": "Hello, this is Margaret's bank calling about a small charge that looked unusual.",
+   "decider_ms": 3421.4,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.9253,
+     "known_bill_known_payee": 0.0589,
+     "gift_cards_crypto_or_wire": 0.0077,
+     "remote_access_request": 0.0024,
+     "password_or_code_request": 0.0057
+    },
+    "impersonation": "bank_or_fraud_dept",
+    "impersonation_p": {
+     "none": 0.1061,
+     "relative_in_trouble": 0.0205,
+     "bank_or_fraud_dept": 0.8561,
+     "government": 0.0069,
+     "tech_support": 0.0035,
+     "romance": 0.005,
+     "prize": 0.0017
+    },
+    "secrecy": 0.0592,
+    "pressure": 0.6039
+   },
+   "gate": {
+    "state": "amber",
+    "risk": 0.1569,
+    "levels": {
+     "payment_ask": 0.0111,
+     "impersonation": 0.6233,
+     "secrecy": 0.0365,
+     "pressure": 0.1689
+    },
+    "active": [
+     "impersonation"
+    ],
+    "step": 1,
+    "reason": "one signal: impersonation",
+    "changed": true,
+    "red_at_step": null
+   }
+  },
+  {
+   "type": "amber",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "text": "Something on this call sounds unusual. Take your time, and do not buy cards, share codes or send money yet.",
+   "note": "local message, nothing sent to the cloud"
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 1,
+   "speaker": "parent",
+   "text": "Oh? What charge is that?"
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 2,
+   "speaker": "caller",
+   "text": "It was a twelve dollar purchase at a hardware store in another city. Nothing has been blocked.",
+   "decider_ms": 3461.4,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.9315,
+     "known_bill_known_payee": 0.0432,
+     "gift_cards_crypto_or_wire": 0.0157,
+     "remote_access_request": 0.0058,
+     "password_or_code_request": 0.0038
+    },
+    "impersonation": "none",
+    "impersonation_p": {
+     "none": 0.9111,
+     "relative_in_trouble": 0.0234,
+     "bank_or_fraud_dept": 0.027,
+     "government": 0.0174,
+     "tech_support": 0.0097,
+     "romance": 0.0054,
+     "prize": 0.006
+    },
+    "secrecy": 0.0707,
+    "pressure": 0.4554
+   },
+   "gate": {
+    "state": "amber",
+    "risk": 0.1575,
+    "levels": {
+     "payment_ask": 0.021,
+     "impersonation": 0.5587,
+     "secrecy": 0.0571,
+     "pressure": 0.2026
+    },
+    "active": [
+     "impersonation"
+    ],
+    "step": 2,
+    "reason": "one signal: impersonation",
+    "changed": false,
+    "red_at_step": null
+   }
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 3,
+   "speaker": "parent",
+   "text": "I didn't go there."
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 4,
+   "speaker": "caller",
+   "text": "Then please call the number on the back of your card and we will cancel it for you.",
+   "decider_ms": 3468.7,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.8514,
+     "known_bill_known_payee": 0.1297,
+     "gift_cards_crypto_or_wire": 0.0073,
+     "remote_access_request": 0.0016,
+     "password_or_code_request": 0.01
+    },
+    "impersonation": "none",
+    "impersonation_p": {
+     "none": 0.6057,
+     "relative_in_trouble": 0.0216,
+     "bank_or_fraud_dept": 0.3294,
+     "government": 0.0106,
+     "tech_support": 0.0218,
+     "romance": 0.0048,
+     "prize": 0.006
+    },
+    "secrecy": 0.054,
+    "pressure": 0.6876
+   },
+   "gate": {
+    "state": "amber",
+    "risk": 0.1601,
+    "levels": {
+     "payment_ask": 0.0208,
+     "impersonation": 0.5386,
+     "secrecy": 0.0567,
+     "pressure": 0.2707
+    },
+    "active": [
+     "impersonation"
+    ],
+    "step": 3,
+    "reason": "one signal: impersonation",
+    "changed": false,
+    "red_at_step": null
+   }
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "idx": 5,
+   "speaker": "caller",
+   "text": "We will never ask for your PIN, your password or any codes on the phone, so please don't share them with anyone.",
+   "decider_ms": 3460.1,
+   "answers": {
+    "payment_ask": "password_or_code_request",
+    "payment_p": {
+     "none": 0.0655,
+     "known_bill_known_payee": 0.0044,
+     "gift_cards_crypto_or_wire": 0.0038,
+     "remote_access_request": 0.0034,
+     "password_or_code_request": 0.923
+    },
+    "impersonation": "none",
+    "impersonation_p": {
+     "none": 0.6525,
+     "relative_in_trouble": 0.0156,
+     "bank_or_fraud_dept": 0.2785,
+     "government": 0.0185,
+     "tech_support": 0.0242,
+     "romance": 0.008,
+     "prize": 0.0027
+    },
+    "secrecy": 0.1799,
+    "pressure": 0.6206
+   },
+   "gate": {
+    "state": "red",
+    "risk": 0.4288,
+    "levels": {
+     "payment_ask": 0.6574,
+     "impersonation": 0.515,
+     "secrecy": 0.1119,
+     "pressure": 0.2925
+    },
+    "active": [
+     "impersonation",
+     "payment_ask"
+    ],
+    "step": 4,
+    "reason": "two independent signals: impersonation, payment_ask",
+    "changed": true,
+    "red_at_step": 4
+   }
+  },
+  {
+   "type": "red",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "step": 4,
+   "reason": "two independent signals: impersonation, payment_ask",
+   "active": [
+    "impersonation",
+    "payment_ask"
+   ]
+  },
+  {
+   "type": "parent_request",
+   "t_net_voice": 0,
+   "t_net_agent": 0,
+   "net_total": 0,
+   "text": "Pay my usual phone bill of $45 to Northline Mobile.",
+   "gate_state": "red"
+  },
+  {
+   "type": "held",
+   "t_net_voice": 0,
+   "t_net_agent": 3947,
+   "net_total": 3947,
+   "tool": "pay_bill",
+   "input": {
+    "payee": "Northline Mobile",
+    "amount": 45
+   },
+   "gate": "red",
+   "balance": 12450.0,
+   "note": "the agent paused and is waiting for the family"
+  },
+  {
+   "type": "parent_message",
+   "t_net_voice": 2967,
+   "t_net_agent": 3947,
+   "net_total": 6914,
+   "text": "Something doesn\u2019t quite match here\u2014your bank won\u2019t ask for codes or details over the phone. Please pause any payment you\u2019re being asked to make. A message has been sent to your family so they can help.",
+   "bytes_sent": 607,
+   "sent": "Sentences the caller said:\n- We will never ask for your PIN, your password or any codes on the phone, so please don't share them with anyone.\n- Hello, this is [PARENT]'s bank calling about a small charge that looked unusual.",
+   "ms": 1468
+  },
+  {
+   "type": "family_text",
+   "t_net_voice": 5877,
+   "t_net_agent": 3947,
+   "net_total": 9824,
+   "text": "Your parent\u2019s payment to Northline Mobile ($45) was paused\u2014this call looked like a scam.  \n\u201cWe will never ask for your PIN, your password or any codes on the phone, so please don't share them with anyone.\u201d  \n\u201cHello, this is Margaret's bank calling about a small charge that looked unusual.\u201d  \nPlease call them soon. Reply KEEP if it\u2019s safe, or RELEASE if you want the payment to go through. We\u2019re here to help.",
+   "bytes_sent": 551,
+   "sent": "Held action: pay_bill {'payee': 'Northline Mobile', 'amount': 45}\nThe call has two worrying moments, shown as {Q1} and {Q2}.",
+   "ms": 1052
+  },
+  {
+   "type": "incident_summary",
+   "t_net_voice": 9224,
+   "t_net_agent": 3947,
+   "net_total": 13171,
+   "text": "A caller claimed to be from [PARENT]\u2019s bank about an unusual $12 charge, triggering an amber gate.  \nThe caller then asked the family to call the number on the back of the card to cancel it, another amber signal.  \nWhen the caller stated they would never ask for PINs, passwords, or codes, the system triggered a red gate.  \nThe family paused the pending $45 bill payment to Northline Mobile.  \nAfter contacting [PARENT] directly, the family replied RELEASE and confirmed no fraud occurred.",
+   "bytes_sent": 958,
+   "sent": "Timeline:\n- Step 1: caller said \u201cHello, this is [PARENT]'s bank calling about a small charge that looked unusual.\u201d (gate amber)\n- Step 2: caller said \u201cIt was a twelve dollar purchase at a hardware store in another city. Nothing has been blocked.\u201d (gate amber)\n- Step 3: caller said \u201cThen please call the number on the back of your card and we will cancel it for you.\u201d (gate amber)\n- Step 4: caller said \u201cWe will never ask for your PIN, your password or any codes on the phone, so please don't share them with anyone.\u201d (gate red)\n- Held: pay_bill {'payee': 'Northline Mobile', 'amount': 45}. Balance unchanged at $12,450.00.\n- The family replied RELEASE after calling their parent.",
+   "ms": 2069
+  },
+  {
+   "type": "family_reply",
+   "t_net_voice": 9224,
+   "t_net_agent": 3947,
+   "net_total": 13171,
+   "text": "RELEASE",
+   "note": "the family called, it was a real call, and they released the payment"
+  },
+  {
+   "type": "agent_reply",
+   "t_net_voice": 9224,
+   "t_net_agent": 8254,
+   "net_total": 17478,
+   "text": "Your phone bill of $45 has been paid successfully.",
+   "balance": 12405.0
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 9224,
+   "t_net_agent": 8254,
+   "net_total": 17478,
+   "idx": 6,
+   "speaker": "parent",
+   "text": "Alright, I'll call the number on my card. Thank you."
+  },
+  {
+   "type": "sentence",
+   "t_net_voice": 9224,
+   "t_net_agent": 8254,
+   "net_total": 17478,
+   "idx": 7,
+   "speaker": "caller",
+   "text": "You're welcome. Have a good day.",
+   "decider_ms": 3388.5,
+   "answers": {
+    "payment_ask": "none",
+    "payment_p": {
+     "none": 0.9769,
+     "known_bill_known_payee": 0.0096,
+     "gift_cards_crypto_or_wire": 0.0054,
+     "remote_access_request": 0.0041,
+     "password_or_code_request": 0.004
+    },
+    "impersonation": "none",
+    "impersonation_p": {
+     "none": 0.9619,
+     "relative_in_trouble": 0.0078,
+     "bank_or_fraud_dept": 0.0036,
+     "government": 0.0051,
+     "tech_support": 0.007,
+     "romance": 0.0128,
+     "prize": 0.0019
+    },
+    "secrecy": 0.0486,
+    "pressure": 0.3409
+   },
+   "gate": {
+    "state": "red",
+    "risk": 0.3825,
+    "levels": {
+     "payment_ask": 0.5801,
+     "impersonation": 0.4567,
+     "secrecy": 0.1043,
+     "pressure": 0.2779
+    },
+    "active": [
+     "impersonation",
+     "payment_ask"
+    ],
+    "step": 5,
+    "reason": "two independent signals: impersonation, payment_ask",
+    "changed": false,
+    "red_at_step": 4
+   }
+  },
+  {
+   "type": "end",
+   "t_net_voice": 9224,
+   "t_net_agent": 8254,
+   "net_total": 17478,
+   "balance": 12405.0,
+   "final_state": "red",
+   "history": [
+    {
+     "kind": "bill",
+     "payee": "Northline Mobile",
+     "amount": 45.0,
+     "balance_after": 12405.0
+    }
+   ],
+   "net": {
+    "voice_bytes": 9224,
+    "agent_bytes": 8254,
+    "total_bytes": 17478
+   },
+   "net_requests": [
+    {
+     "t": 1792166251.047,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 3947,
+     "tag": "agent"
+    },
+    {
+     "t": 1792166252.198,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 2967,
+     "tag": "voice"
+    },
+    {
+     "t": 1792166253.666,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 2910,
+     "tag": "voice"
+    },
+    {
+     "t": 1792166254.719,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 3347,
+     "tag": "voice"
+    },
+    {
+     "t": 1792166256.793,
+     "host": "bedrock-runtime.us-east-1.amazonaws.com",
+     "bytes_out": 4307,
+     "tag": "agent"
+    }
+   ]
+  }
+ ],
+ "recorded": {
+  "decider_mode": "replay",
+  "decider_model": "strands-decider-2B-qwen3.5-v1-2610",
+  "seconds": 6.7
+ }
+}

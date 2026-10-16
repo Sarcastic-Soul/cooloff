@@ -8,10 +8,11 @@
 x-decider: &decider
   container_name: decider
   environment:
-    DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-hobson-v19}
+    DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-qwen3.5-v1-2610}
   volumes:
     - decider-models:/models
     - ./results:/results
+    - ./bench/data:/app/data:ro
   restart: "no"
 
 services:
@@ -24,7 +25,7 @@ services:
       args:
         TORCH: cpu
     environment:
-      DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-hobson-v19}
+      DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-qwen3.5-v1-2610}
       DECIDER_DEVICE: cpu
 
   decider-gpu:
@@ -36,7 +37,7 @@ services:
       args:
         TORCH: gpu
     environment:
-      DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-hobson-v19}
+      DECIDER_MODEL: ${DECIDER_MODEL:-StrandsAgents/strands-decider-2B-qwen3.5-v1-2610}
       DECIDER_DEVICE: cuda
     deploy:
       resources:

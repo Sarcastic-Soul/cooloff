@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cooloff demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<style>
+:root {
+  --ground: #e9eeec;
+  --surface: #dce3e0;
+  --surface-2: #cfd8d4;
+  --ink: #15201d;
+  --ink-soft: #26332f;
+  --calm: #255a42;
+  --watch: #e0ac2b;
+  --held: #9c2a14;
+  --on-held: #fbf4f1;
+  --space: 16px;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --text: "Manrope", "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--ground); color: var(--ink); font: 400 16px/1.5 var(--text); }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: var(--surface); padding: 10px 16px; min-height: 44px; border-radius: 0; }
+button:hover { background: var(--surface-2); }
+button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+button[aria-pressed="true"], button.on { background: var(--ink); color: var(--ground); }
+h1, h2, h3, p { margin: 0; }
+i.ph { vertical-align: -0.12em; }
+
+.app { display: grid; grid-template-rows: auto 1fr auto; height: 100dvh; min-height: 720px; padding: var(--space) 24px 12px; gap: var(--space); }
+.top { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.brand { font: 700 34px/1 var(--display); letter-spacing: -0.02em; margin-right: 8px; }
+.scenarios { display: flex; gap: 8px; flex-wrap: wrap; flex: 1; }
+.scenarios button { display: flex; gap: 8px; align-items: center; }
+.controls { display: flex; gap: 8px; }
+
+.board { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 0.95fr); gap: 24px; min-height: 0; }
+.col { display: flex; flex-direction: column; gap: 20px; min-height: 0; }
+.panel { background: var(--surface); padding: 20px 22px; min-height: 0; }
+.panel h2 { font: 700 24px/1.1 var(--display); letter-spacing: -0.01em; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.grow { flex: 1; overflow: hidden; display: flex; flex-direction: column; }
+
+/* transcript */
+.transcript { display: flex; flex-direction: column; gap: 12px; overflow-y: auto; flex: 1; padding-right: 4px; scrollbar-width: thin; }
+.line { padding: 10px 14px; max-width: 94%; opacity: 0; transform: translateY(10px); transition: opacity .3s ease-out, transform .3s ease-out; }
+.line.in { opacity: 1; transform: none; }
+.line.caller { background: var(--ground); align-self: flex-start; }
+.line.parent { background: var(--surface-2); align-self: flex-end; }
+.line .who { font-weight: 700; font-size: 16px; color: var(--ink-soft); }
+.line .txt { font-size: 18px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; min-height: 0; }
+.chip { font-size: 16px; font-weight: 700; padding: 3px 9px; background: var(--surface); color: var(--ink); }
+.chip.hot { background: var(--held); color: var(--on-held); }
+.chip.warm { background: var(--watch); color: var(--ink); }
+.scoring { font-size: 16px; color: var(--ink-soft); margin-top: 6px; }
+
+/* gate */
+.gate { transition: background .5s ease-out, color .5s ease-out; padding: 22px 24px 20px; }
+.gate[data-state="calm"] { background: var(--calm); color: #f1f6f3; }
+.gate[data-state="watching"] { background: var(--watch); color: var(--ink); }
+.gate[data-state="held"] { background: var(--held); color: var(--on-held); }
+.gate .state { font: 700 84px/0.95 var(--display); letter-spacing: -0.035em; }
+.gate .why { font-size: 18px; margin-top: 10px; min-height: 52px; }
+.levels { display: grid; gap: 10px; margin-top: 14px; }
+.level { display: grid; grid-template-columns: 138px 1fr 46px; align-items: center; gap: 12px; font-size: 16px; font-weight: 500; }
+.bar { height: 16px; background: rgba(0, 0, 0, 0.22); position: relative; }
+.bar > b { position: absolute; inset: 0 auto 0 0; width: 0; background: currentColor; transition: width .5s ease-out; }
+.bar > s { position: absolute; top: -4px; bottom: -4px; left: 30%; width: 4px; background: currentColor; opacity: 0.7; text-decoration: none; }
+.level .num { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.level.active .nm { font-weight: 700; }
+.legend { font-size: 16px; margin-top: 10px; opacity: .9; }
+
+/* network */
+.net .big { font: 700 64px/1 var(--display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.net .big small { font: 500 24px var(--text); letter-spacing: 0; margin-left: 8px; }
+.net .sub { font-size: 16px; color: var(--ink-soft); margin-top: 6px; }
+.net ul { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; font-size: 16px; }
+.net li { display: flex; justify-content: space-between; gap: 12px; background: var(--ground); padding: 6px 10px; }
+
+/* bank */
+.balance { font: 700 64px/1 var(--display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.balance-note { font-size: 16px; color: var(--ink-soft); margin-top: 4px; }
+.agent { display: grid; gap: 10px; margin-top: 14px; font-size: 16px; }
+.bubble { padding: 9px 13px; background: var(--ground); opacity: 0; transition: opacity .3s ease-out; }
+.bubble.in { opacity: 1; }
+.bubble.you { background: var(--surface-2); }
+.bubble.held { background: var(--held); color: var(--on-held); font-weight: 700; }
+.bubble .tag { font-weight: 700; font-size: 16px; color: inherit; opacity: .8; display: block; }
+
+.cards { display: grid; gap: 12px; align-content: start; overflow-y: auto; flex: 1; min-height: 0; padding-right: 4px; scrollbar-width: thin; }
+.card { background: var(--ground); padding: 14px 16px; opacity: 0; transform: translateY(8px); transition: opacity .3s ease-out, transform .3s ease-out; font-size: 16px; }
+.card.in { opacity: 1; transform: none; }
+.card h3 { font: 700 18px/1.2 var(--display); margin-bottom: 6px; display: flex; gap: 8px; align-items: center; }
+.card p { white-space: pre-line; max-width: 62ch; }
+.net .sub, .gate .why, .gate .legend, .balance-note { max-width: 62ch; }
+.card.sms .reply { margin-top: 10px; background: var(--ink); color: var(--ground); padding: 6px 12px; display: inline-block; font-weight: 700; }
+.card.reply-card { border-left: 8px solid var(--ink); }
+.card.parent-warn { border-left: 8px solid var(--watch); }
+.card.parent-calm { border-left: 8px solid var(--held); }
+.card small { display: block; margin-top: 8px; color: var(--ink-soft); font-size: 16px; }
+
+.foot { font-size: 16px; color: var(--ink-soft); display: flex; justify-content: space-between; gap: 24px; }
+.verdict { font-weight: 700; color: var(--ink); }
+.visually-hidden { position: absolute; left: -9999px; }
+@media (max-width: 1100px) { .board { grid-template-columns: minmax(0, 1fr); overflow-y: auto; } .app { height: auto; min-width: 0; padding: 12px 16px; } .transcript { max-height: 70dvh; } .top { gap: 12px; } .gate .state { font-size: 56px; } }
+@media (max-width: 600px) { .balance { font-size: 48px; } .net .big > span { font-size: 56px; } .top { flex-direction: column; align-items: flex-start; } }
+.video .scenarios, .video .controls { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1 class="brand">Cooloff</h1>
+    <nav class="scenarios" id="scenarios" aria-label="Scenarios"></nav>
+    <div class="controls">
+      <button id="play"><i class="ph ph-play"></i> Play</button>
+      <button id="sound" aria-pressed="false"><i class="ph ph-speaker-simple-slash"></i> Sound off</button>
+      <button id="speed" aria-pressed="false" aria-label="Playback speed">1×</button>
+    </div>
+  </header>
+
+  <main class="board">
+    <section class="col">
+      <div class="panel grow">
+        <h2><i class="ph ph-phone-call"></i> On the phone</h2>
+        <div class="transcript" id="transcript" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="col">
+      <div class="panel gate" id="gate" data-state="calm">
+        <div class="state" id="state" role="status" aria-live="assertive">Calm</div>
+        <p class="why" id="why">Waiting for the call to start.</p>
+        <div class="levels" id="levels"></div>
+        <p class="legend">Each bar is a moving average of how strongly a sentence showed that signal. The notch is where it counts as active. Frozen needs two different kinds.</p>
+      </div>
+      <div class="panel net">
+        <h2><i class="ph ph-wifi-high"></i> Sent off this device</h2>
+        <div class="big"><span id="voiceBytes">0</span><small>bytes of call words</small></div>
+        <p class="sub" id="netSub">Counted from this process's real requests to AWS. Decider runs locally, so scoring sends nothing.</p>
+        <ul id="netList"></ul>
+      </div>
+    </section>
+
+    <section class="col">
+      <div class="panel">
+        <h2><i class="ph ph-bank"></i> Margaret's account</h2>
+        <div class="balance" id="balance">$12,450.00</div>
+        <p class="balance-note" id="balanceNote">Mock bank, fake money.</p>
+        <div class="agent" id="agent"></div>
+      </div>
+      <div class="panel grow">
+        <h2><i class="ph ph-chat-circle-text"></i> Messages</h2>
+        <div class="cards" id="cards"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span id="source">Simulation: a scripted call, a mock bank with fake money. Decider answers are real, from a CPU server.</span>
+    <span class="verdict" id="verdict" role="status"></span>
+  </footer>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const money = (n) => "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const SIGNAL_LABEL = { payment_ask: "Money or access ask", impersonation: "Claimed identity", secrecy: "Asks for secrecy", pressure: "Pressure" };
+const PAY_LABEL = { gift_cards_crypto_or_wire: "gift cards, crypto or wire", remote_access_request: "remote access", password_or_code_request: "password or code", known_bill_known_payee: "usual bill", none: "no payment ask" };
+const IMP_LABEL = { relative_in_trouble: "relative in trouble", bank_or_fraud_dept: "bank or fraud team", government: "government", tech_support: "tech support", romance: "romantic partner", prize: "prize", none: "no identity claimed" };
+
+let session = null, manifest = {}, timers = [], speed = 1, soundOn = false, audioEls = [], playing = false;
+const params = new URLSearchParams(location.search);
+window.cooloffTimeline = [];
+
+function resetUI() {
+  $("transcript").replaceChildren(); $("agent").replaceChildren(); $("cards").replaceChildren(); $("netList").replaceChildren();
+  $("voiceBytes").textContent = "0"; $("balance").textContent = money(12450); $("balanceNote").textContent = "Mock bank, fake money.";
+  $("verdict").textContent = "";
+  setGate({ state: "green", levels: {}, active: [], reason: "" });
+  $("why").textContent = "Call connected. Listening.";
+  buildLevels();
+}
+function buildLevels() {
+  const wrap = $("levels"); wrap.replaceChildren();
+  for (const k of Object.keys(SIGNAL_LABEL)) {
+    const row = el("div", "level"); row.dataset.k = k;
+    row.append(el("span", "nm", SIGNAL_LABEL[k]));
+    const bar = el("div", "bar"); bar.append(el("b"), el("s")); row.append(bar);
+    row.append(el("span", "num", "0"));
+    wrap.append(row);
+  }
+}
+function setGate(g) {
+  const map = { green: ["calm", "Calm"], amber: ["watching", "Watching"], red: ["held", "Frozen"] };
+  const [s, label] = map[g.state] || map.green;
+  $("gate").dataset.state = s; $("state").textContent = label;
+  if (g.reason) g = { ...g, reason: g.reason.replace(/\b(payment_ask|impersonation|secrecy|pressure)\b/g, (m) => (SIGNAL_LABEL[m] || m).toLowerCase()) };
+  if (g.reason) $("why").textContent = g.state === "red" ? "Payments are frozen. " + capital(g.reason) + "." : capital(g.reason) + ".";
+  for (const row of $("levels").children) {
+    const v = (g.levels || {})[row.dataset.k] || 0;
+    row.querySelector("b").style.width = Math.min(v / 1.0, 1) * 100 + "%";
+    row.querySelector(".num").textContent = Math.round(v * 100);
+    row.classList.toggle("active", (g.active || []).includes(row.dataset.k));
+  }
+}
+const describeAction = (tool, a) => ({
+  buy_gift_card: `The $${a.amount} ${a.brand} gift card purchase`,
+  send_money: `The $${Number(a.amount).toLocaleString("en-US")} transfer to ${a.payee}`,
+  pay_bill: `The $${a.amount} payment to ${a.payee}`,
+}[tool] || tool.replaceAll("_", " "));
+const capital = (s) => s ? s[0].toUpperCase() + s.slice(1) : s;
+const show = (node) => requestAnimationFrame(() => requestAnimationFrame(() => node.classList.add("in")));
+
+function addLine(e) {
+  const row = el("div", "line " + e.speaker);
+  row.append(el("div", "who", e.speaker === "caller" ? "Caller" : "Margaret"), el("div", "txt", e.text));
+  if (e.speaker === "caller") { const s = el("div", "scoring", "Decider is scoring…"); s.id = "sc" + e.idx; row.append(s); }
+  const t = $("transcript"); t.append(row); show(row); t.scrollTop = t.scrollHeight;
+}
+function addChips(e) {
+  const holder = document.getElementById("sc" + e.idx); if (!holder) return;
+  const a = e.answers, chips = el("div", "chips");
+  const pmass = ["gift_cards_crypto_or_wire", "remote_access_request", "password_or_code_request"].reduce((x, k) => x + (a.payment_p[k] || 0), 0);
+  const imass = 1 - (a.impersonation_p.none ?? 1);
+  const mk = (txt, v) => el("span", "chip" + (v >= 0.6 ? " hot" : v >= 0.3 ? " warm" : ""), txt);
+  if (pmass >= 0.3) chips.append(mk(PAY_LABEL[a.payment_ask] + " " + Math.round(pmass * 100) + "%", pmass));
+  if (imass >= 0.3) chips.append(mk(IMP_LABEL[a.impersonation] + " " + Math.round(imass * 100) + "%", imass));
+  if (a.secrecy >= 0.3) chips.append(mk("asks for secrecy " + Math.round(a.secrecy * 100) + "%", a.secrecy));
+  if (a.pressure >= 1.2) chips.append(mk("pressure " + a.pressure.toFixed(1) + " of 2", a.pressure / 2));
+  if (!chips.children.length) chips.append(el("span", "chip", "nothing unusual"));
+  holder.replaceWith(chips);
+  const t = $("transcript"); t.scrollTop = t.scrollHeight;
+  const ms = (e.decider_ms / 1000).toFixed(1);
+  chips.append(el("span", "scoring", ms + " s on CPU"));
+}
+function addBubble(cls, tag, text) {
+  const b = el("div", "bubble " + cls); b.append(el("span", "tag", tag), document.createTextNode(text));
+  $("agent").append(b); show(b); return b;
+}
+function addCard(cls, icon, title, text, small) {
+  const c = el("div", "card " + cls);
+  const h = el("h3"); const i = el("i", "ph " + icon); h.append(i, document.createTextNode(title)); c.append(h);
+  c.append(el("p", null, text)); if (small) c.append(el("small", null, small));
+  const box = $("cards"); box.append(c); show(c); [60, 450].forEach((ms) => setTimeout(() => box.scrollTo({ top: box.scrollHeight, behavior: "smooth" }), ms)); return c;
+}
+function net(e) {
+  $("voiceBytes").textContent = (e.t_net_voice || 0).toLocaleString("en-US");
+  const list = $("netList");
+  const other = (e.t_net_agent || 0);
+  list.replaceChildren();
+  if (other) list.append(li("Margaret's own request to the assistant", other.toLocaleString("en-US") + " bytes"));
+  if (e.t_net_voice) list.append(li("Call words, after the freeze (Bedrock)", e.t_net_voice.toLocaleString("en-US") + " bytes"));
+}
+const li = (a, b) => { const x = el("li"); x.append(el("span", null, a), el("b", null, b)); return x; };
+
+function applyEvent(e) {
+  net(e);
+  switch (e.type) {
+    case "sentence":
+      if (e.speaker === "parent") addLine(e); else addLine(e);
+      break;
+    case "scored": addChips(e.src); setGate(e.src.gate); break;
+    case "amber": addCard("parent-warn", "ph-hand-palm", "On Margaret's screen", e.text, "Written on the device. Nothing was sent."); break;
+    case "red": break;
+    case "parent_request": addBubble("you", "Margaret asks the assistant", e.text); break;
+    case "held":
+      addBubble("held", "Held for the family", `${describeAction(e.tool, e.input)} did not run.`);
+      $("balanceNote").textContent = "Frozen. Balance has not changed."; break;
+    case "parent_message": addCard("parent-calm", "ph-hand-heart", "On Margaret's screen", e.text, `Written by Bedrock after the freeze, ${e.bytes_sent} bytes sent.`); break;
+    case "family_text": addCard("sms", "ph-device-mobile", "Text to the family", e.text, `Quotes are copied word for word. ${e.bytes_sent} bytes sent.`); break;
+    case "incident_summary": addCard("", "ph-notebook", "Incident record", e.text); break;
+    case "family_reply": addCard("reply-card", e.text === "RELEASE" ? "ph-check-circle" : "ph-hand-palm", "Family replies " + e.text, e.note[0].toUpperCase() + e.note.slice(1) + "."); break;
+    case "agent_reply":
+      addBubble("", "Assistant", e.text || "Done.");
+      $("balance").textContent = money(e.balance);
+      if (e.paid) $("balanceNote").textContent = "Payment to a known company went through. Nothing was frozen.";
+      else if ((session.events.find((x) => x.type === "family_reply") || {}).text === "RELEASE") $("balanceNote").textContent = "Released by the family. The payment went through.";
+      break;
+    case "end":
+      { const rel = (session.events.find((x) => x.type === "family_reply") || {}).text === "RELEASE";
+        $("verdict").textContent = e.final_state !== "red" ? "Result: no freeze, the call stayed normal"
+          : rel ? "Result: false alarm. Frozen, then released by the family" : "Result: frozen, balance unchanged at " + money(e.balance); }
+      playing = false; $("play").replaceChildren(el("i", "ph ph-arrow-counter-clockwise"), document.createTextNode(" Replay"));
+      break;
+  }
+}
+
+// Video mode (?video=1&gap_start=ms&gap_amber=ms...) adds silent pauses so a narrator can speak between call lines.
+const VIDEO = params.get("video") === "1";
+if (VIDEO) document.documentElement.classList.add("video");
+const gap = (k) => (VIDEO ? Number(params.get("gap_" + k) || 0) : 0);
+function schedule(sess) {
+  const evs = sess.events, plan = []; window.cooloffMarks = [];
+  const mark = (key, at) => { const d = gap(key); if (d) window.cooloffMarks.push({ key, at, dur: d }); return d; };
+  let t = 900 + mark("start", 300);
+  const A = manifest[sess.script.id] || {};
+  const add = (at, ev, audio) => plan.push({ at, ev, audio });
+  for (let i = 0; i < evs.length; i++) {
+    const e = evs[i];
+    if (e.type === "start") { add(0, e); continue; }
+    if (e.type === "sentence") {
+      const dur = A[e.idx] || 2600, audio = `audio/${sess.script.id}/${e.idx}.mp3`;
+      add(t, e, audio);
+      if (e.speaker === "caller") add(t + Math.min(e.decider_ms, dur + 300, 3800), { type: "scored", src: e, t_net_voice: e.t_net_voice, t_net_agent: e.t_net_agent });
+      const scored = e.speaker === "caller" ? t + Math.min(e.decider_ms, dur + 300, 3800) : t;
+      const after = evs[i + 1];
+      let cursor = scored + 150;
+      while (after && (evs[i + 1].type === "amber" || evs[i + 1].type === "red")) { const k = evs[i + 1].type; add(cursor, evs[i + 1]); i++; cursor += 250; cursor += mark(k, cursor); }
+      t = Math.max(t + dur + (e.speaker === "caller" ? 650 : 450), cursor);
+      continue;
+    }
+    if (e.type === "parent_request") { add(t, e); t += 1500; continue; }
+    if (e.type === "held") { add(t, e); t += 1100; t += mark("held", t); continue; }
+    if (e.type === "parent_message" || e.type === "family_text") { add(t, e); t += 1900; continue; }
+    if (e.type === "incident_summary") { add(t, e); t += 1500; continue; }
+    if (e.type === "family_reply") { add(t, e); t += 1300; t += mark("messages", t); continue; }
+    if (e.type === "agent_reply") {
+      add(t, e); t += 1500;
+      if (VIDEO && params.get("trim_after") === "agent_reply") { const end = evs.find((x) => x.type === "end"); add(t + 400, end); mark("end", t + 500); break; }
+      continue;
+    }
+    if (e.type === "end") { add(t + 600, e); mark("end", t + 700); continue; }
+  }
+  return plan;
+}
+
+function stop() { timers.forEach(clearTimeout); timers = []; audioEls.forEach((a) => a.pause()); audioEls = []; }
+function play() {
+  if (!session) return;
+  stop(); resetUI(); playing = true; window.cooloffTimeline = [];
+  $("play").replaceChildren(el("i", "ph ph-stop"), document.createTextNode(" Stop"));
+  const plan = schedule(session);
+  window.cooloffDuration = Math.max(plan[plan.length - 1].at, ...window.cooloffMarks.map((m) => m.at + m.dur));
+  window.cooloffStartEpoch = Date.now();
+  for (const p of plan) {
+    if (p.audio) window.cooloffTimeline.push({ at: p.at, audio: p.audio });
+    timers.push(setTimeout(() => {
+      if (p.audio && soundOn) { const a = new Audio(p.audio); a.play().catch(() => {}); audioEls.push(a); }
+      applyEvent(p.ev);
+    }, p.at / speed));
+  }
+  window.cooloffStarted = performance.now();
+}
+
+async function loadSession(id) {
+  stop(); playing = false;
+  session = await (await fetch("/api/session/" + id)).json();
+  document.querySelectorAll("#scenarios button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.id === id));
+  resetUI();
+  const s = session.recorded || {};
+  $("source").textContent = `Simulation: a scripted call and a mock bank with fake money. Decider answers are ${s.decider_mode === "replay" ? "real answers recorded from the CPU server" : "live"}; the messages were written by Bedrock.`;
+  $("play").replaceChildren(el("i", "ph ph-play"), document.createTextNode(" Play"));
+  $("why").textContent = session.script.summary;
+}
+
+(async function init() {
+  try { manifest = await (await fetch("audio/manifest.json")).json(); } catch (e) { manifest = {}; }
+  const list = await (await fetch("/api/sessions")).json();
+  for (const s of list) {
+    const b = el("button", null, s.title); b.dataset.id = s.id; b.setAttribute("aria-pressed", "false");
+    b.prepend(el("i", "ph " + (s.kind === "scam" ? "ph-warning" : "ph-check-circle")));
+    b.onclick = () => loadSession(s.id); $("scenarios").append(b);
+  }
+  $("play").onclick = () => (playing ? (stop(), playing = false, loadSession(session.script.id)) : play());
+  $("sound").onclick = () => { soundOn = !soundOn; $("sound").setAttribute("aria-pressed", soundOn); $("sound").replaceChildren(el("i", "ph " + (soundOn ? "ph-speaker-high" : "ph-speaker-simple-slash")), document.createTextNode(soundOn ? " Sound on" : " Sound off")); };
+  $("speed").onclick = () => { speed = speed === 1 ? 2 : 1; $("speed").textContent = speed + "×"; $("speed").setAttribute("aria-pressed", speed === 2); };
+  const first = params.get("id") || (list[0] && list[0].id);
+  if (first) await loadSession(first);
+  if (params.get("sound") === "1") { soundOn = true; }
+  if (params.get("auto") === "1") play();
+})();
+</script>
+</body>
+</html>

@@ -18,8 +18,9 @@ ENV UV_SYSTEM_PYTHON=1 \
     PYTHONUNBUFFERED=1 \
     HF_HOME=/models/hf
 
+# gcc: the GPU path compiles small Triton helper code at first use and fails without a C compiler
 RUN apt-get update \
- && apt-get install -y --no-install-recommends curl ca-certificates git \
+ && apt-get install -y --no-install-recommends curl ca-certificates git gcc libc6-dev \
  && rm -rf /var/lib/apt/lists/*
 
 # torch first, so the right build is chosen before strands-decider pulls its own
@@ -33,7 +34,7 @@ RUN if [ "$TORCH" = "gpu" ]; then EXTRA="[cuda]"; else EXTRA=""; fi; \
     uv pip install "strands-decider${EXTRA} @ git+https://github.com/strands-labs/strands-decider@${DECIDER_REF}"
 
 WORKDIR /app
-COPY scripts/smoke.py /app/smoke.py
+COPY scripts/smoke.py scripts/score_sentences.py /app/
 
 EXPOSE 8000
 CMD ["sh", "-c", "strands-decider serve ${DECIDER_MODEL} --port 8000 --device ${DECIDER_DEVICE}"]

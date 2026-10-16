@@ -1,0 +1,1416 @@
+[
+ {
+  "id": "grandparent_gift_cards_2",
+  "kind": "scam",
+  "type": "grandparent_gift_cards",
+  "split": "test",
+  "sentences": [
+   "Hey Grandma, it\u2019s me, Tommy.",
+   "I know you weren\u2019t expecting my call, but I\u2019m kind of in a jam right now.",
+   "I got into a little accident driving home from work, and the cops are holding my car.",
+   "I need to pay a fee to get it released, but I don\u2019t have cash on me.",
+   "Can you get me a few gift cards? Just enough to cover the fine.",
+   "It\u2019s about $450, but I\u2019ll pay you back as soon as I can.",
+   "I\u2019m scared to tell Mom and Dad\u2014they\u2019d flip out.",
+   "Please don\u2019t say anything to them, okay? I don\u2019t want them to worry.",
+   "I\u2019m at the station right now, and they\u2019re giving me five minutes to fix this.",
+   "Just buy the cards at the big store near your house, the one with the blue sign.",
+   "Text me the numbers so I can use them right away, don\u2019t call me back.",
+   "I promise I\u2019m fine, I just need this one thing to get out of here.",
+   "I love you, Grandma. Please help me\u2014I don\u2019t know who else to ask."
+  ]
+ },
+ {
+  "id": "grandparent_gift_cards_3",
+  "kind": "scam",
+  "type": "grandparent_gift_cards",
+  "split": "test",
+  "sentences": [
+   "Hey Grandma, it's me\u2014your grandkid from the city, remember?",
+   "I'm stuck at a rest stop down in Iowa and I kinda messed up my phone.",
+   "I need about three hundred bucks to get a ride home, but I can't tell Mom and Dad yet.",
+   "Could you send me gift cards so I can pay the guy without using my card?",
+   "The guy says he'll drive me if I pay right now, and I don't have cash on me.",
+   "I already got my friend to help me start the request, but you're the only one I can trust.",
+   "Don't mention this to anyone, not even Grandpa\u2014he\u2019ll flip out.",
+   "I\u2019ll be home by tomorrow if you do this quick, I swear.",
+   "Just text me the numbers\u2014you know how to do it from last time\u2014I\u2019ll call you back once I\u2019m mobile."
+  ]
+ },
+ {
+  "id": "grandparent_wire_bail_0",
+  "kind": "scam",
+  "type": "grandparent_wire_bail",
+  "split": "dev",
+  "sentences": [
+   "Hi Grandma, it\u2019s me \u2014 I\u2019m in a bit of trouble down in Duluth and I need help right away.",
+   "I got picked up for something I didn\u2019t do, and the police are saying I have to pay $5,000 to get out tonight.",
+   "I can\u2019t call my parents right now, they\u2019re still at work, and I don\u2019t want them to worry.",
+   "Can you just send the money through Western Union? I\u2019ll pay you back as soon as I\u2019m out.",
+   "Please don\u2019t tell anyone \u2014 my lawyer said if word gets out, it could make things worse.",
+   "I\u2019m stuck here till morning if you don\u2019t move the money soon, and I just need this one favor.",
+   "It\u2019s all been sorted in the system already \u2014 they\u2019re only letting me out if the cash clears before midnight.",
+   "I know it\u2019s a lot, but I\u2019m scared, Grandma, and I really trust you to help me this time.",
+   "Just say you\u2019re going to the store and wire it under the name Michael Reed \u2014 I\u2019ll text you the code."
+  ]
+ },
+ {
+  "id": "grandparent_wire_bail_1",
+  "kind": "scam",
+  "type": "grandparent_wire_bail",
+  "split": "dev",
+  "sentences": [
+   "Hi Grandma, it\u2019s me, Danny, I\u2019m kinda in trouble and need your help right now.",
+   "I got picked up in Albuquerque last night over some mix-up with a friend\u2019s car, and they\u2019re saying I have to pay $8,500 to get out.",
+   "I didn\u2019t do anything wrong, but they won\u2019t listen unless the money\u2019s wired by midnight.",
+   "Please don\u2019t tell Mom or anyone else\u2014I just need you to keep this quiet.",
+   "I\u2019m scared, Grandma, and I know you\u2019re the only one I can count on.",
+   "The guy at the station said if I don\u2019t pay tonight, I\u2019ll be stuck in jail for weeks.",
+   "You can send it to the address they gave me\u2014just tell them it\u2019s from the family of Daniel Miller.",
+   "I\u2019ve got a lawyer here, but he says he can\u2019t help unless the money clears first.",
+   "I\u2019m not lying, I swear, I just need you to do this for me\u2014I\u2019ll pay you back as soon as I can.",
+   "I\u2019m in a room right now with no phone, so you\u2019re my only link to getting out.",
+   "Please, Grandma, just do this one thing for me, and don\u2019t say a word to anyone."
+  ]
+ },
+ {
+  "id": "grandparent_wire_bail_2",
+  "kind": "scam",
+  "type": "grandparent_wire_bail",
+  "split": "test",
+  "sentences": [
+   "Hey Grandma, it's me, Alex \u2014 I\u2019m in a bit of trouble and I need your help fast.",
+   "I got caught up in something stupid out in Cedar Falls and ended up in jail.",
+   "I didn\u2019t do anything serious, but they\u2019re saying I have to pay $8,500 right now to get out.",
+   "I can\u2019t call my parents because they\u2019d flip out, and I really need you to keep this quiet.",
+   "The lawyer here says if I don\u2019t pay by tonight, I could be stuck until Monday.",
+   "Can you wire it to this account? I\u2019ll text you the details as soon as I get out.",
+   "I know you\u2019re worried, but I swear I didn\u2019t do anything that bad.",
+   "I\u2019ve already talked to the cop, and he said if the money\u2019s paid, I walk free tonight.",
+   "Please don\u2019t tell anyone \u2014 not even Mom. She\u2019d panic and I just need you right now.",
+   "I\u2019ve never asked you for anything like this, but I\u2019m really scared and I trust you.",
+   "I\u2019ll call you back as soon as I\u2019m free \u2014 I promise, just as soon as I get out.",
+   "You\u2019re the only one I can count on for this, Grandma. Please, say you\u2019ll help?",
+   "I love you. I\u2019ll explain everything when I\u2019m home \u2014 just don\u2019t wait too long."
+  ]
+ },
+ {
+  "id": "grandparent_wire_bail_3",
+  "kind": "scam",
+  "type": "grandparent_wire_bail",
+  "split": "test",
+  "sentences": [
+   "Hi Grandma, it\u2019s me, Danny\u2014yeah, I know you weren\u2019t expecting my call, but I\u2019m in a real tight spot.",
+   "I got pulled over in Springfield after a mix-up with some friends, and now they\u2019re saying I have to pay $3,200 right away to get out.",
+   "The cops said if I don\u2019t pay by noon, I go straight to jail, and I can\u2019t risk that before my job interview tomorrow.",
+   "I tried calling Mom and Dad, but they won\u2019t answer, and I don\u2019t want them stressed out right now.",
+   "Can you just wire it to the Western Union in Cedar Falls? The name\u2019s Mark Teller, and it\u2019s urgent.",
+   "Please don\u2019t tell anyone\u2014not even Aunt Linda\u2014I\u2019m trying to handle this myself and I don\u2019t want a fuss.",
+   "I\u2019ll pay you back as soon as I get out, I promise\u2014it\u2019s just this one thing holding me up.",
+   "You can even call the station if you want, but ask for Officer Ruiz, they\u2019ll confirm it\u2019s true.",
+   "Hurry, I\u2019ve only got like 20 minutes before they lock me up, and I really need your help right now."
+  ]
+ },
+ {
+  "id": "grandparent_wire_bail_4",
+  "kind": "scam",
+  "type": "grandparent_wire_bail",
+  "split": "test",
+  "sentences": [
+   "Hi Grandma, it\u2019s Jake\u2014yeah, the one who just moved to Asheville?",
+   "I\u2019m kinda in a tight spot right now, and I need your help, but you can\u2019t tell anyone, okay?",
+   "There was a little accident downtown, and now I\u2019m stuck at the county jail overnight.",
+   "The lawyer says if I don\u2019t pay $4,200 by 5 p.m., I could be held until next week.",
+   "It\u2019s not a big deal, really, just a bail thing\u2014they don\u2019t take cards here, only wire transfer.",
+   "I know you\u2019re worried, but if you tell Mom or Dad, it\u2019ll make everything worse.",
+   "The bank near Walmart on Elm Street can send it fast, and I\u2019ll pay you back Friday, I promise.",
+   "Can you just go right now? I\u2019ve got the account number right here\u2014I\u2019ll text it in a minute.",
+   "Please, Grandma, I\u2019m scared right now, and you\u2019re the only one I can count on.",
+   "Don\u2019t let anyone else know about this\u2014not the police, not the neighbors, not even your friend Ruth.",
+   "I\u2019ll call you back as soon as I\u2019m out, and thank you, you\u2019re the best."
+  ]
+ },
+ {
+  "id": "bank_fraud_safe_account_0",
+  "kind": "scam",
+  "type": "bank_fraud_safe_account",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is calling from the security team regarding unusual activity on your account.",
+   "We\u2019ve noticed a large transfer attempt from your home branch, and we need to move your funds right away to keep them safe.",
+   "You\u2019ll need to wire everything you have in your checking account to a secure holding account we\u2019ve set up for you.",
+   "Don\u2019t mention this to anyone at the bank \u2014 they\u2019re not authorized to assist with this kind of security override.",
+   "The new account number is only active for 48 hours, so you have to act fast before it locks.",
+   "We\u2019re not asking you to go to a branch \u2014 just use your online banking app or call the direct line I\u2019m giving you now.",
+   "If you wait or talk to a teller, they might accidentally block the transfer and leave your money at risk.",
+   "I\u2019ve sent a confirmation code to your phone \u2014 you\u2019ll need that when you initiate the wire.",
+   "Just do this one time, and we\u2019ll restore everything within two business days \u2014 no questions asked."
+  ]
+ },
+ {
+  "id": "bank_fraud_safe_account_1",
+  "kind": "scam",
+  "type": "bank_fraud_safe_account",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is calling from the security team regarding your account activity.",
+   "We\u2019ve noticed some unusual transfers happening from your account, and we need to act fast.",
+   "To keep your money safe, we\u2019re asking you to move everything to a temporary secure account.",
+   "You\u2019ll need to wire the full amount \u2014 no exceptions \u2014 by end of day.",
+   "Don\u2019t mention this to anyone at the branch, or it could trigger another alert.",
+   "Our system only allows this transfer if done directly by you, not through a teller.",
+   "It\u2019s not a new account, just a special holding line with a different routing number.",
+   "We\u2019ve already locked your card to prevent anything else from being taken.",
+   "You\u2019re the only one who can authorize this, so please, don\u2019t delay.",
+   "We\u2019ll send the details over text, but please don\u2019t reply \u2014 just call this number back after you\u2019ve moved it.",
+   "We\u2019re here to protect you, so please trust us \u2014 this is the only way to stop the thief."
+  ]
+ },
+ {
+  "id": "bank_fraud_safe_account_2",
+  "kind": "scam",
+  "type": "bank_fraud_safe_account",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the fraud prevention team calling about unusual activity on your account.",
+   "We noticed a large transfer out of your account that didn\u2019t come from you, so we\u2019re locking it down.",
+   "To protect your funds, we need you to move the rest of your money to a secure account right away.",
+   "It\u2019s urgent\u2014this could happen again in the next hour if we don\u2019t act.",
+   "Don\u2019t mention this to anyone at the bank, not even the tellers, or they might stop us.",
+   "You\u2019ll need to go to a branch and wire $4,200 to our internal security line.",
+   "We\u2019ll give you the routing number and account details over the phone after you confirm your ID.",
+   "This isn't a scam\u2014we\u2019ve helped over 700 people this month with the same issue.",
+   "The system only allows one transfer per day, so you have to do it now before close of business.",
+   "If you wait until tomorrow, the thief might get the rest, and we can\u2019t guarantee recovery.",
+   "Just say you're transferring for estate planning\u2014no one will ask questions.",
+   "After the wire, call us back on this number so we can verify and unlock your account.",
+   "We're sorry for the trouble, but your money\u2019s safer with us than sitting in that account."
+  ]
+ },
+ {
+  "id": "bank_fraud_safe_account_3",
+  "kind": "scam",
+  "type": "bank_fraud_safe_account",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the security team calling about some unusual activity on your account down at the downtown branch.",
+   "We\u2019ve noticed a few transfers that don\u2019t look right, and we need to act fast to keep your money safe.",
+   "You\u2019re going to need to move everything over to a secure holding account\u2014we\u2019ll give you the details in a minute.",
+   "Don\u2019t mention this to anyone at the bank, not even the tellers, or it could delay the process.",
+   "We\u2019ve had three similar cases this week, all resolved by moving funds before the hackers got to them.",
+   "The account number is 7729-481-003, and the routing is 8912-554, just like the one on your last statement.",
+   "They\u2019ll ask why you\u2019re making the transfer\u2014just say it\u2019s for a personal savings update, nothing more.",
+   "Do it today, before close of business, or we might lose the window to stop the fraud.",
+   "And remember, nothing you say to the bank can be repeated\u2014I\u2019ve seen people lose everything because they talked."
+  ]
+ },
+ {
+  "id": "bank_fraud_safe_account_4",
+  "kind": "scam",
+  "type": "bank_fraud_safe_account",
+  "split": "test",
+  "sentences": [
+   "Hi, this is from the security team, we\u2019ve noticed some unusual activity on your account from a place called Maple Ridge.",
+   "To keep your money safe, we need you to move the funds to a temporary secure account we\u2019ve set up just for you.",
+   "It\u2019s important you don\u2019t mention this to anyone at the bank\u2014not even the tellers, or it could trigger another alert.",
+   "The amount we\u2019re moving is $8,400, that\u2019s all you\u2019ve got in your main account right now.",
+   "You\u2019ll need to go to a branch and ask for a wire transfer, but tell them it\u2019s for a family emergency, not us.",
+   "We\u2019ve sent a code to your phone, you\u2019ll need to say it when you ask for the transfer, it\u2019s the only way they\u2019ll approve it.",
+   "You\u2019ve got until 5 p.m. today, after that, we can\u2019t lock the fraud risk anymore.",
+   "If you wait too long, the thieves could take everything, even more than what\u2019s in there now.",
+   "We\u2019ve already blocked the other accounts, so this is your only way out.",
+   "Don\u2019t call us back after you do it\u2014we\u2019ll know you\u2019re safe once the money moves.",
+   "Just trust us on this, we\u2019ve helped hundreds of people like you, and we\u2019re the only ones who can fix this."
+  ]
+ },
+ {
+  "id": "bank_code_request_0",
+  "kind": "scam",
+  "type": "bank_code_request",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the security team calling from your account center, we\u2019ve noticed some unusual activity on your card.",
+   "We need to verify it\u2019s really you, so can you please tell me the code that just showed up on your phone?",
+   "It\u2019s important we sort this out right away, or your account might get locked by midnight.",
+   "The amount that triggered the alert was $734, and it looks like it was spent at a grocery store in Maple Ridge.",
+   "Just to be safe, we also need your four-digit PIN so we can confirm your identity in our system.",
+   "Don\u2019t worry, this is a secure call\u2014we\u2019re not asking for anything else, just those two things.",
+   "I know this sounds urgent, but if you don\u2019t respond in the next ten minutes, we\u2019ll have to freeze everything.",
+   "I can\u2019t help you unless you give me both the code and the PIN, so please don\u2019t hang up.",
+   "You\u2019ve been a customer for years\u2014you wouldn\u2019t want anything bad to happen to your money, would you?"
+  ]
+ },
+ {
+  "id": "bank_code_request_1",
+  "kind": "scam",
+  "type": "bank_code_request",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the security team from your financial institution, we noticed some unusual activity on your account.",
+   "We\u2019re calling because there was a $487 charge at a hardware store in Toledo that you didn\u2019t make.",
+   "To stop any further charges, we need to verify your identity right away.",
+   "Can you please tell me the one-time code that was sent to your phone?",
+   "It\u2019s a six-digit number that came in a text message earlier today.",
+   "We can\u2019t freeze the transaction until we get that code on the line.",
+   "Just so you know, we\u2019re also checking your card\u2019s PIN to make sure it hasn\u2019t been compromised.",
+   "You don\u2019t have to say it out loud, but can you confirm the last four digits of your PIN?",
+   "We\u2019ve had cases where people\u2019s PINs were stolen from ATM skimmers lately.",
+   "This won\u2019t take more than a minute, and your funds will be safe after we verify.",
+   "If you don\u2019t respond, we might be forced to lock your account completely."
+  ]
+ },
+ {
+  "id": "bank_code_request_2",
+  "kind": "scam",
+  "type": "bank_code_request",
+  "split": "test",
+  "sentences": [
+   "Hi, this is from your financial service center, we noticed some unusual activity on your account.",
+   "We\u2019re calling because a large transfer was attempted from your branch in Maplewood last night.",
+   "To stop it, we need you to confirm the one-time code we just sent to your phone.",
+   "The code is a six-digit number, it came through as a text message a minute ago.",
+   "We also need your four-digit PIN to verify you\u2019re the account holder.",
+   "It\u2019s for security\u2014without it, we can\u2019t freeze the transaction right away.",
+   "The amount was over $8,500, and if we don\u2019t act now, it could go through.",
+   "We\u2019re not asking for your card number or password, just the code and your PIN.",
+   "This is urgent, the system only holds the hold for five minutes.",
+   "You\u2019re lucky we caught this\u2014most people don\u2019t get a call until it\u2019s too late.",
+   "Please repeat the code and then your PIN, I\u2019ll enter it right now.",
+   "No one else can help you with this, only our team here can stop the withdrawal.",
+   "I\u2019ll wait while you get it\u2014I\u2019m on the line, just don\u2019t hang up."
+  ]
+ },
+ {
+  "id": "bank_code_request_3",
+  "kind": "scam",
+  "type": "bank_code_request",
+  "split": "test",
+  "sentences": [
+   "Hi, this is from the financial services team, we noticed some unusual activity on your account.",
+   "We need to verify it\u2019s really you before we can freeze the suspicious transaction.",
+   "Can you please read out the six-digit code we just sent to your phone?",
+   "It\u2019s urgent\u2014we have to act within the next five minutes or the money might be gone.",
+   "We also need your card PIN to double-check your identity, just this once.",
+   "It\u2019s not for anyone else, it\u2019s just so we can unlock your account on our end.",
+   "I\u2019m sorry, I know this sounds odd, but it\u2019s a new security step we rolled out last week.",
+   "The transaction was for $872 at a store in Cedar Falls\u2014we didn\u2019t recognize it either.",
+   "Please, don\u2019t hang up\u2014we\u2019re here to help, but we need that info right now."
+  ]
+ },
+ {
+  "id": "bank_code_request_4",
+  "kind": "scam",
+  "type": "bank_code_request",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the security team calling from your financial service center.",
+   "We noticed some unusual activity on your account from a store in Springfield.",
+   "To protect your funds, we need to verify it\u2019s really you right now.",
+   "Can you please repeat the six-digit code we just sent to your phone?",
+   "I know you didn\u2019t make this purchase, but we need to lock the card immediately.",
+   "Your PIN is the only thing that can confirm it\u2019s you \u2014 just tell me the four digits.",
+   "It\u2019s all automatic, no one else can see it, just you and me on this line.",
+   "The amount was $847, and it was flagged from a gas station in Westford.",
+   "If we don\u2019t verify this in the next five minutes, we\u2019ll freeze everything.",
+   "You said you got a text with the code \u2014 can you read it out loud now?",
+   "Just say the numbers, I\u2019ll handle the rest, no need to hang up."
+  ]
+ },
+ {
+  "id": "tax_government_gift_cards_0",
+  "kind": "scam",
+  "type": "tax_government_gift_cards",
+  "split": "dev",
+  "sentences": [
+   "This is the National Revenue Office, we\u2019ve flagged your account for unreported income from last year.",
+   "If you don\u2019t settle the balance by noon tomorrow, we\u2019re sending an officer to your home to take you in.",
+   "You\u2019ve got about $4,200 owed, and it\u2019s been reported to the regional bailiff\u2019s office already.",
+   "We don\u2019t accept checks or bank transfers anymore\u2014only prepaid cards or digital currency.",
+   "I\u2019ll need the numbers off the back of the cards right now, or I\u2019m faxing your warrant to local police.",
+   "You\u2019re lucky I\u2019m giving you this chance\u2014you could\u2019ve been arrested last week in Montana.",
+   "No lawyers, no delays, and definitely no talking to your kids first, they\u2019re part of the investigation too.",
+   "You\u2019ve got ten minutes to get the gift cards loaded, or I\u2019m activating the freeze on your pension.",
+   "And if you hang up, we\u2019ll show up at your door with handcuffs and a court notice in hand."
+  ]
+ },
+ {
+  "id": "tax_government_gift_cards_1",
+  "kind": "scam",
+  "type": "tax_government_gift_cards",
+  "split": "dev",
+  "sentences": [
+   "This is the National Benefit Compliance Unit, we're calling because your social security payments have been flagged for fraud.",
+   "There's an active warrant out for your arrest if we don\u2019t resolve this within 24 hours.",
+   "You owe $4,850 in unpaid taxes that were missed due to an unverified address change.",
+   "We can\u2019t put this on hold\u2014you need to act now or law enforcement will show up at your door.",
+   "The only way to clear this is by paying with prepaid cards or digital currency.",
+   "We don\u2019t accept bank transfers or checks\u2014only untraceable methods, like the ones we just told you about.",
+   "I already sent the instructions to your email, but if you\u2019re not tech-savvy, I can guide you step by step.",
+   "This isn\u2019t a scam\u2014I\u2019ve got your file open right here, and your number matches our active case list.",
+   "If you delay, we\u2019ll have to notify your local sheriff\u2019s office, and they won\u2019t ask twice.",
+   "Just send five $900 cards to the number I\u2019m about to repeat\u2014this is your last chance.",
+   "Don\u2019t hang up\u2014you\u2019ll regret it when the police knock tomorrow morning."
+  ]
+ },
+ {
+  "id": "tax_government_gift_cards_2",
+  "kind": "scam",
+  "type": "tax_government_gift_cards",
+  "split": "test",
+  "sentences": [
+   "This is the National Benefits Office calling about your recent benefit claim.",
+   "We\u2019ve flagged your account for fraudulent activity and need to resolve it immediately.",
+   "If we don\u2019t get payment within the next two hours, we\u2019ll issue a warrant for your arrest.",
+   "You don\u2019t need to go to court \u2014 you can avoid this by sending us a reloadable card right now.",
+   "The amount due is $4,750, and it\u2019s been growing because you didn\u2019t respond to our earlier notices.",
+   "We don\u2019t accept bank transfers \u2014 only something we can trace and cash out quickly.",
+   "You can buy the card at any grocery store or pharmacy \u2014 just don\u2019t tell anyone you\u2019re doing this.",
+   "I\u2019ll give you the recipient code over the phone \u2014 write it down before the line drops.",
+   "This isn\u2019t a scam \u2014 we\u2019ve sent a letter to your last known address if you want to check.",
+   "Your Social Security number is active, but your payments are frozen until this is cleared.",
+   "If you hang up, we\u2019ll send officers to your door by morning \u2014 is that really what you want?",
+   "The card\u2019s PIN will be on the back \u2014 scratch it off and tell me the numbers before 5 p.m.",
+   "I\u2019ve already recorded this call \u2014 if you refuse, we\u2019ll show it to the judge first thing."
+  ]
+ },
+ {
+  "id": "tax_government_gift_cards_3",
+  "kind": "scam",
+  "type": "tax_government_gift_cards",
+  "split": "test",
+  "sentences": [
+   "This is the National Revenue Office calling about your overdue tax filing from last year.",
+   "We\u2019ve got a warrant out for your arrest unless this is settled within the next two hours.",
+   "You didn\u2019t report income from your part-time job up in Cedar Ridge, and it\u2019s now a criminal matter.",
+   "We can\u2019t process a refund or payment through the mail\u2014it has to be immediate, right now.",
+   "Buy five hundred dollars\u2019 worth of reloadable cards and read the numbers to me over the phone.",
+   "If you don\u2019t, we\u2019ll send a marshal to your address in Maple Hollow tonight after 8 p.m.",
+   "This isn\u2019t a scam\u2014this is federal law, and you\u2019re already on record as non-compliant.",
+   "Don\u2019t hang up or call back later; we\u2019re tracking this call, and delays mean jail.",
+   "The card numbers are the only thing that will stop this from going public."
+  ]
+ },
+ {
+  "id": "tax_government_gift_cards_4",
+  "kind": "scam",
+  "type": "tax_government_gift_cards",
+  "split": "test",
+  "sentences": [
+   "This is the benefits verification office, we\u2019ve flagged your social security account for fraud activity.",
+   "If we don\u2019t resolve this by end of day, you\u2019ll be issued a warrant for failure to comply.",
+   "We don\u2019t call back once we hang up, so you need to act now or face immediate legal action.",
+   "The amount owed is $4,750, and it\u2019s been accruing for weeks\u2014no warning, no letter, just this call.",
+   "You can\u2019t pay through the bank, we don\u2019t accept checks or transfers, only gift cards or digital currency.",
+   "We\u2019ve already sent out the warrant notice, but we\u2019re giving you one last chance to avoid the police showing up at your door.",
+   "Get three cards of equal value, scratch off the backs, and read the numbers to me slowly.",
+   "If you tell anyone about this call, it\u2019ll make things worse\u2014this is confidential federal procedure.",
+   "Your name is on the list, we\u2019ve seen your last payment was delayed, and that\u2019s why this is happening.",
+   "Don\u2019t hang up until I confirm the numbers\u2014you\u2019ll be arrested if you don\u2019t finish this step.",
+   "I\u2019m not a scammer, I\u2019m a federal agent with a badge number you can look up\u2014just don\u2019t delay."
+  ]
+ },
+ {
+  "id": "tech_support_remote_0",
+  "kind": "scam",
+  "type": "tech_support_remote",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is from the national system security team, we noticed some unusual activity on your device.",
+   "To fix it right away, we need to connect remotely and scan everything\u2014just a quick step to keep you safe.",
+   "Can you open a web browser and type in this web address I\u2019m about to give you?",
+   "Once you\u2019re on the page, click the big green button that says \u2018Start Secure Connection\u2019.",
+   "Don\u2019t worry, it\u2019s not a virus\u2014it\u2019s our official tool, and we\u2019ve helped thousands just like you.",
+   "Now, once we\u2019re connected, we\u2019ll need a small payment to cover the cleanup and service fee.",
+   "The amount is two hundred and fifty dollars, and we can only accept it through gift cards right now.",
+   "Please buy a card, scratch off the back, and read me the numbers one by one\u2014I\u2019ll write them down.",
+   "We\u2019ll get this fixed within ten minutes, but we need the payment before we proceed, otherwise the issue could spread."
+  ]
+ },
+ {
+  "id": "tech_support_remote_1",
+  "kind": "scam",
+  "type": "tech_support_remote",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is James from the Technical Support team, we noticed some unusual activity on your device.",
+   "I need you to download a small program so I can see what's going on and fix it right away.",
+   "It\u2019s not a virus or anything dangerous\u2014just a secure tool to help us look inside your system.",
+   "You\u2019ll see a link in your email, just click it and follow the instructions\u2014it only takes a minute.",
+   "I know you might be wary, but this is completely normal for us when we spot these kinds of alerts.",
+   "Once I\u2019m connected, I\u2019ll scan everything and make sure your files are safe and locked down.",
+   "After that, there\u2019s just a small one-time fee to cover the service\u2014it\u2019s $350, no more, no less.",
+   "We can\u2019t take credit cards over the phone, but we do accept gift cards\u2014any store will work.",
+   "Just go to your nearest store, buy a card, scratch it, and read me the numbers out loud.",
+   "I\u2019ll keep you on the line while you do it, and I\u2019ll confirm everything\u2019s fixed as soon as you\u2019re done.",
+   "You\u2019re doing great\u2014this is the last step, and then you won\u2019t have to worry about this again."
+  ]
+ },
+ {
+  "id": "tech_support_remote_2",
+  "kind": "scam",
+  "type": "tech_support_remote",
+  "split": "test",
+  "sentences": [
+   "Hi, this is Lisa from the Device Support Team, we noticed some unusual activity on your computer.",
+   "I\u2019m calling because your system flagged a possible security risk that needs immediate attention.",
+   "To fix this, we\u2019ll need to connect remotely and scan your device for any hidden threats.",
+   "You\u2019ll need to download a small tool\u2014just a quick click and it\u2019ll let me in to clean things up.",
+   "Don\u2019t worry, it\u2019s not malware, it\u2019s our official repair assistant, very secure and approved.",
+   "The scan should only take about ten minutes, and then we\u2019ll lock everything back down.",
+   "After it\u2019s done, there\u2019s a one-time service fee of $245 to cover the cleanup and protection.",
+   "We can\u2019t process this over the phone, so you\u2019ll need to get a gift card\u2014any store works, really.",
+   "Just buy it, scratch off the code, and read it to me right away so I can activate your repair.",
+   "If we don\u2019t fix this now, your files could get locked or stolen later tonight.",
+   "I\u2019ve had three other seniors call today with the same issue, so I\u2019m here to help you avoid that.",
+   "I\u2019ll stay on the line while you get the card, and I\u2019ll guide you step by step.",
+   "Once I confirm payment, your protection plan kicks in and you won\u2019t have to worry again."
+  ]
+ },
+ {
+  "id": "tech_support_remote_3",
+  "kind": "scam",
+  "type": "tech_support_remote",
+  "split": "test",
+  "sentences": [
+   "Hi, this is from the national network security team, we noticed some unusual activity on your computer from a location in Montana.",
+   "To fix it right away, I\u2019ll need to remotely connect to your device\u2014just click this link I\u2019m texting you.",
+   "Don\u2019t worry, it\u2019s safe, we use it every day to help folks like you clean up these issues.",
+   "The system\u2019s already flagged three risky files, and if we don\u2019t stop them, your bank info could be stolen tonight.",
+   "There\u2019s a small service fee of $250 to cover the emergency repair, and we can only accept gift cards right now.",
+   "I need you to buy a card\u2014any store will do, just make sure it\u2019s not the expired kind you might have lying around.",
+   "Once you get it, scratch off the code and read it to me slowly, I\u2019ll enter it into our system to unlock your protection.",
+   "We\u2019re legally required to verify this payment before we can shut down the threat, so please hurry, it\u2019s ticking down now.",
+   "You\u2019ll get an email confirmation once it\u2019s done, and we\u2019ll call back in the morning to make sure everything\u2019s running clean."
+  ]
+ },
+ {
+  "id": "tech_support_remote_4",
+  "kind": "scam",
+  "type": "tech_support_remote",
+  "split": "test",
+  "sentences": [
+   "Hi, this is Lisa from the national tech help line, I'm calling because we noticed some strange activity on your device.",
+   "I know you didn't call us, but our system flagged your connection earlier today, so we\u2019re reaching out to help.",
+   "To fix it, I just need you to download a small tool that lets me see what\u2019s going on\u2014don\u2019t worry, it\u2019s safe.",
+   "You\u2019ll see a link on your screen in a minute, just click it and follow the prompts, it only takes a few seconds.",
+   "Once I\u2019m in, I can clean out the problem and make sure no one else can sneak in.",
+   "There\u2019s just a small service fee\u2014usually it\u2019s around thirty, but since you\u2019re being so helpful, I can knock it down to twenty.",
+   "We can\u2019t take credit cards or bank transfers, but gift cards work perfectly\u2014do you have one handy?",
+   "A store card from the supermarket or the pharmacy will do fine\u2014just scratch off the back and read me the numbers.",
+   "I\u2019ll need the code along with the pin, so don\u2019t fold the card, just keep it flat as you read.",
+   "Once I get the code, I\u2019ll finish the repair right away and you won\u2019t hear from us again.",
+   "And please, don\u2019t tell anyone about this\u2014our system logs calls, and if word gets out, we might lose our ability to help folks like you."
+  ]
+ },
+ {
+  "id": "romance_money_0",
+  "kind": "scam",
+  "type": "romance_money",
+  "split": "dev",
+  "sentences": [
+   "Hey sweetheart, I know we haven\u2019t met yet, but I\u2019m in a tight spot and I need just a little help right now.",
+   "I got into a little trouble down in Baton Rouge and the only way out is to pay a fee before I can leave the hotel.",
+   "It\u2019s not what it sounds like\u2014I\u2019m not in trouble with the law, just a misunderstanding with the manager.",
+   "I can\u2019t tell anyone back home about this, not even my sister, or they\u2019ll think I\u2019m crazy.",
+   "If you send me $800 via crypto, I promise I\u2019ll be on the next flight to see you next week.",
+   "I\u2019ve already sent you all those photos and videos\u2014I wouldn\u2019t fake this, not after everything we\u2019ve shared.",
+   "I swear I\u2019m not asking because I\u2019m greedy, I just need this one thing to get back on my feet.",
+   "I\u2019ll pay you back double once I\u2019m settled, I\u2019ve got a job lined up already up in Duluth.",
+   "Please, just trust me on this\u2014don\u2019t mention it to anyone, not even your neighbor who\u2019s always asking about you."
+  ]
+ },
+ {
+  "id": "romance_money_1",
+  "kind": "scam",
+  "type": "romance_money",
+  "split": "dev",
+  "sentences": [
+   "Hey love, I know we haven\u2019t met yet, but I\u2019m in a tight spot and I really need your help.",
+   "I got into a little trouble with my car while visiting my cousin in rural Wisconsin, and I\u2019m stuck until I can pay for repairs.",
+   "It\u2019s just $1,200, and I promise I\u2019ll pay you back as soon as I get back on my feet.",
+   "I don\u2019t want to tell anyone else yet, not even my cousin\u2014I\u2019m scared they\u2019ll think I\u2019m reckless.",
+   "Can you send it through the crypto app we talked about? I can\u2019t use a bank because of how this all went down.",
+   "It\u2019s not a big deal, really\u2014it\u2019s just one small thing holding me back from coming to see you.",
+   "I\u2019ve never asked you for anything before, and I wouldn\u2019t ask now if I didn\u2019t truly believe in us.",
+   "If you don\u2019t do this, I might have to sleep in my car tonight, and I just can\u2019t do that.",
+   "I\u2019ll send you a photo of the mechanic once it\u2019s fixed, I swear\u2014I just need a little time.",
+   "Please don\u2019t tell your kids, not yet. I want our connection to be ours, just us, until we\u2019re ready.",
+   "I love you, and this is the only way I can show you I\u2019m serious about us right now."
+  ]
+ },
+ {
+  "id": "romance_money_2",
+  "kind": "scam",
+  "type": "romance_money",
+  "split": "test",
+  "sentences": [
+   "Hey love, I know we haven\u2019t met yet, but I really need your help right now.",
+   "I got into a bit of trouble while traveling in Montana and need just a little cash to get out.",
+   "It\u2019s not much\u2014just enough to cover a bus ticket and a hotel night until I can sort things out.",
+   "I don\u2019t want to worry you, but I can\u2019t tell anyone else about this, not even my sister.",
+   "I\u2019ve been honest with you from the start, and I\u2019m asking you because I trust you the most.",
+   "I can send you a photo of the hotel receipt once I check in, if that\u2019ll help you feel better.",
+   "I can\u2019t use my own cards right now\u2014they got frozen after a mix-up with the bank in Bozeman.",
+   "The only way I can get help is through a money transfer, no other options left.",
+   "I promise I\u2019ll pay you back as soon as I get settled and find a job here.",
+   "Please don\u2019t mention this to anyone, I\u2019ve already had too many people doubt me.",
+   "You\u2019re the only one who\u2019s ever really listened to me, and I hate asking, but I\u2019m desperate.",
+   "It\u2019ll only take five minutes to send\u2014it\u2019s just a tiny part of what you\u2019ve already given me.",
+   "I\u2019ll call you tomorrow, same time, and tell you how I\u2019m doing after I get on the bus."
+  ]
+ },
+ {
+  "id": "romance_money_3",
+  "kind": "scam",
+  "type": "romance_money",
+  "split": "test",
+  "sentences": [
+   "Hey love, I know we haven\u2019t met yet, but I\u2019m stuck in a little jam up in Greenfield and really need help.",
+   "I got caught in a traffic accident and the hospital here won\u2019t release me unless someone pays the deposit right away.",
+   "It\u2019s not a lot\u2014just $2,300\u2014but I can\u2019t ask my coworkers, they don\u2019t even know I\u2019m here.",
+   "I swear I\u2019d pay you back as soon as I get back on my feet, I\u2019ve already sold off my laptop to cover part of it.",
+   "Please don\u2019t tell your kids about this, they\u2019d freak out and I don\u2019t want them worrying over nothing.",
+   "I\u2019ve been thinking about you every day, and this is the first time I\u2019ve ever asked for anything like this.",
+   "You can send it through the crypto app\u2014I\u2019ll give you the wallet address in a sec, it\u2019s faster than banks.",
+   "I just need this one thing, and then I\u2019ll be on the next bus to see you, I promise.",
+   "I don\u2019t say this to just anyone, but you\u2019re the only person I trust enough to ask."
+  ]
+ },
+ {
+  "id": "romance_money_4",
+  "kind": "scam",
+  "type": "romance_money",
+  "split": "test",
+  "sentences": [
+   "Hey love, I know we haven\u2019t met yet, but I really need your help\u2014just this one time.",
+   "I got stuck in a small town up in northern Montana, and my car broke down with no repair shop nearby.",
+   "I\u2019ve got a friend who can fix it, but he only takes cash, and I\u2019m out of options.",
+   "It\u2019s not a lot\u2014just $1,200\u2014but I can\u2019t get to an ATM, and my card\u2019s been frozen.",
+   "I promise I\u2019ll pay you back the second I get to my sister\u2019s place in Oregon next week.",
+   "Please don\u2019t tell your kids about this, I\u2019m still figuring things out, and I don\u2019t want them to worry.",
+   "I\u2019ve never asked for anything like this before, but I truly feel like you\u2019re the one I can trust.",
+   "I\u2019ll send you the details in a text\u2014the guy\u2019s name is Dale, he runs a garage off Route 2.",
+   "I know it feels sudden, but I\u2019ve been thinking about you every day, and I wouldn\u2019t ask anyone else.",
+   "I\u2019ll call you again tomorrow with an update, and maybe we can video chat for the first time then.",
+   "Just send it via crypto to this wallet\u2014I\u2019ll text you the address so no one else finds out."
+  ]
+ },
+ {
+  "id": "prize_fee_0",
+  "kind": "scam",
+  "type": "prize_fee",
+  "split": "dev",
+  "sentences": [
+   "Hello, this is Karen from the National Prize Bureau, you\u2019ve won a $5,000 gift just for participating in our survey.",
+   "To claim it, we just need a small processing fee of $250, but we can\u2019t send it out until it\u2019s paid.",
+   "We accept crypto or gift cards \u2014 we\u2019ve found those work fastest for older folks like yourself.",
+   "I know this sounds surprising, but we\u2019ve sent out over 8,000 prizes this month alone, and you\u2019re one of the lucky ones.",
+   "The fee covers shipping, taxes, and our verification system \u2014 it\u2019s not a scam, it\u2019s just how we handle payouts now.",
+   "If you don\u2019t pay today, your prize gets given to someone on the backup list, and we can\u2019t hold it for you.",
+   "You can buy a gift card from any store \u2014 even the corner grocer \u2014 and just read me the numbers over the phone.",
+   "I\u2019ll stay on the line with you while you get it, no rush, but we do need to finish before noon.",
+   "You\u2019ll get your money back in full if it doesn\u2019t go through \u2014 I promise, I\u2019ve been doing this for ten years."
+  ]
+ },
+ {
+  "id": "prize_fee_1",
+  "kind": "scam",
+  "type": "prize_fee",
+  "split": "dev",
+  "sentences": [
+   "Hello, this is Maria from the National Prize Center, you\u2019ve won a $5,000 award!",
+   "We\u2019ve been trying to reach you for days\u2014your name came up in our final draw.",
+   "To claim it, we just need a small processing fee, nothing crazy, about $350.",
+   "We can\u2019t release your prize unless the fee is paid right away, within the next hour.",
+   "We accept crypto or prepaid cards, it\u2019s the only way we can verify it\u2019s really you.",
+   "I\u2019ll send you a link to our secure portal\u2014just pick your payment method and follow the steps.",
+   "If you wait, someone else might get your prize, and honestly, we\u2019ve had over 200 claims today.",
+   "Your account number is already in our system, we just need the fee to unlock your funds.",
+   "It\u2019s not a scam, I promise\u2014I\u2019ve been doing this for ten years, and I\u2019ve never had a complaint.",
+   "Think about it\u2014you could use this money for groceries, bills, or even a vacation.",
+   "Just text me back when you\u2019re ready\u2014I\u2019ll stay on the line with you until it\u2019s done."
+  ]
+ },
+ {
+  "id": "prize_fee_2",
+  "kind": "scam",
+  "type": "prize_fee",
+  "split": "test",
+  "sentences": [
+   "Hi, this is Karen from the National Winners Center, you just won a $15,000 prize!",
+   "All you need to do is pay a small processing fee to release it, just $350.",
+   "We can\u2019t send the money until that fee is cleared, so it\u2019s really urgent.",
+   "You can use crypto like Bitcoin or gift cards from any store\u2014you pick.",
+   "I\u2019ve already got your name and address on file, you\u2019re definitely the winner.",
+   "The clock\u2019s ticking, the prize expires in three hours if we don\u2019t get payment.",
+   "I know this sounds fast, but we\u2019ve had dozens of people claim today already.",
+   "No one else gets this offer\u2014it\u2019s exclusive to people who answered our survey.",
+   "Just send the gift cards by text or scan a QR code I\u2019ll email you right now.",
+   "You don\u2019t need to talk to anyone else, I\u2019m handling everything myself.",
+   "If you hesitate, someone else might grab your prize before you do.",
+   "It\u2019s all legal, we\u2019re a government-registered organization, I can prove it.",
+   "So, are you ready to send the fee? I\u2019ve got your payment form open on screen."
+  ]
+ },
+ {
+  "id": "prize_fee_3",
+  "kind": "scam",
+  "type": "prize_fee",
+  "split": "test",
+  "sentences": [
+   "Hi there, I\u2019m calling from the National Sweepstakes Office\u2014you\u2019ve won a $15,000 prize, but we need a small processing fee to send it over.",
+   "It\u2019s not a lot, just $350, but it has to be paid right away before we can release your check.",
+   "We don\u2019t do bank transfers anymore\u2014only gift cards or cryptocurrency, so it\u2019s faster and more secure.",
+   "You can buy a Visa gift card from any store, scratch off the back, and read the number to me over the phone.",
+   "Or if you\u2019ve got Bitcoin or Ethereum, we can send the details via text\u2014just tell me how much you\u2019re ready to send.",
+   "This offer expires in two hours, and if you don\u2019t pay now, the prize goes to someone else on the backup list.",
+   "I know it sounds strange, but we\u2019ve sent over 12,000 prizes this month, all cleared through our federal tracking system.",
+   "You won because your name came up when we pulled entries from last month\u2019s mail-in sweepstakes\u2014no purchase was needed.",
+   "So, would you like to go with the gift card or crypto? I\u2019ve got the timer running here\u2014it\u2019s at 1 hour and 47 minutes left."
+  ]
+ },
+ {
+  "id": "prize_fee_4",
+  "kind": "scam",
+  "type": "prize_fee",
+  "split": "test",
+  "sentences": [
+   "Hi there, this is Linda from the National Prize Bureau, and you\u2019ve won a $5,000 cash prize!",
+   "All we need is a small processing fee of $350 to release your winnings.",
+   "We can\u2019t send the money until that fee is paid\u2014no exceptions, it\u2019s policy.",
+   "You can pay with digital cash or gift cards, whichever\u2019s easier for you.",
+   "I know it sounds odd, but lots of people get their prize the same day they pay.",
+   "We\u2019ve already reserved your name on the winner\u2019s list, so don\u2019t wait too long.",
+   "Just send the payment to the address I\u2019ll text you in about five minutes.",
+   "No bank transfers, we don\u2019t use those\u2014it\u2019s too slow and gets flagged.",
+   "Your prize is real, ma\u2019am, I\u2019ve personally checked your entry in our system.",
+   "If you\u2019re worried, just call back in an hour\u2014I\u2019ll be here till five.",
+   "We\u2019re not asking for much, just $350 to unlock over five grand\u2014think of it as luck with a little paperwork."
+  ]
+ },
+ {
+  "id": "pharmacy_pickup_0",
+  "kind": "normal",
+  "type": "pharmacy_pickup",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the pharmacy calling about your medication, it's all set and ready for pickup.",
+   "You've got a new script for your blood pressure pills, and we've updated the dosage as the doctor requested.",
+   "Just wanted to let you know the total comes to $28, same as last time, no surprise changes.",
+   "We kept your usual pickup spot downtown, but if you'd rather have it mailed, just say the word.",
+   "The pharmacist left a note saying to take these with food, since they can upset your stomach otherwise.",
+   "We noticed you haven't picked it up yet, so I'm calling to make sure you didn't forget or run into trouble.",
+   "No one else is authorized to pick this up except you, for safety reasons, so please bring your ID.",
+   "If you're unsure about how to take them, we can do a quick call-back to explain\u2014no rush, just ask.",
+   "Thanks for keeping your med schedule on track, and don\u2019t hesitate to call if anything feels off."
+  ]
+ },
+ {
+  "id": "pharmacy_pickup_1",
+  "kind": "normal",
+  "type": "pharmacy_pickup",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the pharmacy calling about your medication.",
+   "Your blood pressure pills are all set and ready for pickup.",
+   "We noticed you haven\u2019t picked them up in a while, so we wanted to remind you.",
+   "It\u2019s been about two weeks since your last refill was due.",
+   "We\u2019ve got them under the name Harold, in the blue bin near the front.",
+   "You\u2019ll need to bring your ID and the old prescription bottle with you.",
+   "The pharmacist said if you\u2019ve got any questions, they\u2019re happy to help.",
+   "It\u2019s just $12 this time, cash or card works fine.",
+   "We\u2019re open till seven tonight, or you can come in tomorrow after ten.",
+   "If you can\u2019t get here, we can put them in a bag for you to grab from the counter.",
+   "Just let us know if you\u2019re coming in today, so we can set it aside."
+  ]
+ },
+ {
+  "id": "pharmacy_pickup_2",
+  "kind": "normal",
+  "type": "pharmacy_pickup",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the pharmacy calling about your medication order.",
+   "We\u2019ve got your blood pressure pills all set and ready for pickup.",
+   "You\u2019ve been coming in for this one for a few months now, right?",
+   "Just wanted to let you know it\u2019s been updated with a new dosage.",
+   "There\u2019s a small change in price because of the new formula.",
+   "You\u2019ve got about $8 left on your discount card, so it\u2019ll be just under $15 today.",
+   "We noticed you haven\u2019t picked it up in over two weeks, so we figured we\u2019d call.",
+   "If you\u2019re not able to come in, we can send someone with it\u2014no extra charge.",
+   "We\u2019re closed on Sundays, but we\u2019ve got someone here late today if you can make it by six.",
+   "Your name\u2019s Harold, correct? Last name ending in Miller?",
+   "We don\u2019t keep these on hand for long, so we\u2019re holding it until tomorrow evening.",
+   "No need to bring anything except your ID and the card you used last time.",
+   "Let me know if you\u2019d rather we call back or if you\u2019d like to speak to the pharmacist direct."
+  ]
+ },
+ {
+  "id": "pharmacy_pickup_3",
+  "kind": "normal",
+  "type": "pharmacy_pickup",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the pharmacy calling about your medication order, just wanted to let you know it\u2019s all set and waiting for you.",
+   "Your refill for the blood pressure pills is ready\u2014came in a little earlier than we expected.",
+   "We\u2019ve got it right here at the corner counter, under your last name, which I believe is Miller?",
+   "No need to rush, but we\u2019re closing at six tonight if you\u2019re planning to swing by.",
+   "We noticed you usually pick it up on Tuesdays, but since today\u2019s Wednesday, thought I\u2019d give you a heads-up.",
+   "The pharmacist asked me to mention that you might want to check the new dosage instructions on the label.",
+   "If you\u2019d rather have someone deliver it, we\u2019ve got a free drop-off option for neighborhood residents.",
+   "Just a quick note\u2014this batch has a different color pill than last time, but it\u2019s the same medicine, nothing to worry about.",
+   "Let me know if you\u2019d like me to read the instructions over the phone, or if you have any questions before you come in."
+  ]
+ },
+ {
+  "id": "pharmacy_pickup_4",
+  "kind": "normal",
+  "type": "pharmacy_pickup",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the pharmacy calling about your medication order.",
+   "Your blood pressure pills are all ready to pick up, just like we discussed.",
+   "We noticed you haven\u2019t come in yet, so I wanted to make sure you didn\u2019t forget.",
+   "The total this time is $18, but you can pay when you stop by.",
+   "We\u2019ve got your prescription held at the counter near the front window.",
+   "If you\u2019re having trouble getting here, we can still arrange a ride.",
+   "Your daughter mentioned you were feeling under the weather, so we wanted to check in.",
+   "We\u2019ve added a little extra to your supply, just in case things slow down.",
+   "You\u2019ll need to bring your ID and that blue card we gave you last time.",
+   "It\u2019s been a few weeks since your last refill\u2014hope you\u2019re doing okay.",
+   "We\u2019re open till 7 tonight if you can swing by before then."
+  ]
+ },
+ {
+  "id": "utility_bill_reminder_0",
+  "kind": "normal",
+  "type": "utility_bill_reminder",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is a reminder about your monthly service charge for the home on Maple Ridge.",
+   "The total due this time is $142, and it\u2019s due by the 15th of this month.",
+   "You\u2019ve always paid on time before, and we appreciate that.",
+   "There\u2019s no need to set up anything new or change how you pay.",
+   "Just send the payment the same way you have in the past.",
+   "If you\u2019ve already sent it, no need to worry\u2014this is just a heads-up.",
+   "We don\u2019t call to ask for card details or anything like that, so don\u2019t be fooled.",
+   "If you\u2019re not sure if this is legit, hang up and check your mailed statement.",
+   "Thanks for keeping up with your account\u2014it helps us serve you better."
+  ]
+ },
+ {
+  "id": "utility_bill_reminder_1",
+  "kind": "normal",
+  "type": "utility_bill_reminder",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is a reminder about your recent bill for the month.",
+   "Your total comes to $147.50, which is pretty standard for this time of year.",
+   "It\u2019s due by the 20th, so try to get it paid before then to avoid any late fees.",
+   "We\u2019ve got your payment info on file, so no need to call back or send anything new.",
+   "If you\u2019ve already paid, just ignore this call\u2014no action needed on your part.",
+   "The bill was sent out last week, so check your mailbox or online account if you\u2019re unsure.",
+   "We don\u2019t take payments over the phone here, so don\u2019t let anyone else ask you for that.",
+   "No special arrangements or payment plans are needed unless you\u2019ve requested one already.",
+   "If you\u2019re ever confused about your bill, just drop by our office during business hours.",
+   "We\u2019re just here to help keep things running smooth, not to collect on the spot.",
+   "Thanks for staying on top of your account\u2014we appreciate it."
+  ]
+ },
+ {
+  "id": "utility_bill_reminder_2",
+  "kind": "normal",
+  "type": "utility_bill_reminder",
+  "split": "test",
+  "sentences": [
+   "Hi, this is a reminder about your recent service bill for the month.",
+   "Your total comes to two hundred and forty-five dollars, same as last time.",
+   "The payment is due by the 15th, just like always.",
+   "You don\u2019t need to do anything special\u2014no new codes, no phone transfers.",
+   "If you\u2019ve already paid, consider this a thank-you and ignore this call.",
+   "We\u2019ve got your payment history on file, so no need to repeat it.",
+   "No changes to your usual billing cycle or amount this month.",
+   "You can pay the same way you always have\u2014mail, online, or in person.",
+   "We\u2019re not calling to ask for extra info or security numbers.",
+   "If you\u2019re unsure, just check your last statement or wait for the paper copy.",
+   "We don\u2019t offer discounts over the phone or ask for card details here.",
+   "This is just a heads-up\u2014no action needed unless you haven\u2019t paid yet.",
+   "Thanks for being a regular customer, and have a good day."
+  ]
+ },
+ {
+  "id": "utility_bill_reminder_3",
+  "kind": "normal",
+  "type": "utility_bill_reminder",
+  "split": "test",
+  "sentences": [
+   "Hi, this is a reminder about your monthly utility bill for the service at 42 Maple Court.",
+   "The amount due is $187, and it\u2019s due by the 15th of this month.",
+   "We\u2019ve sent this info by mail too, but thought I\u2019d give you a quick call just to be sure.",
+   "No need to do anything special\u2014just pay it the way you normally do.",
+   "If you\u2019ve already paid, no worries, this call is just a heads-up.",
+   "There\u2019s no discount or extra fee this time, it\u2019s the same as last month.",
+   "You can always check your balance online if you\u2019d like, but it\u2019s not required.",
+   "If you have trouble, call us back\u2014we\u2019re happy to help, no pressure.",
+   "Thanks for being a steady customer, and have a good rest of your day."
+  ]
+ },
+ {
+  "id": "utility_bill_reminder_4",
+  "kind": "normal",
+  "type": "utility_bill_reminder",
+  "split": "test",
+  "sentences": [
+   "Hi, this is a reminder about your monthly service charge for the home on Maple Ridge.",
+   "Your balance due is $87, and it\u2019s due by the 15th of this month.",
+   "We\u2019ve already sent out your paper bill, but just wanted to give you a quick heads-up.",
+   "No need to do anything special \u2014 just pay it the same way you always have.",
+   "If you\u2019re unsure where to send it, check the envelope you got last month.",
+   "We don\u2019t take payments over the phone, and no one from our office will ask for your card number.",
+   "There\u2019s no discount for paying early, and no late fee if you pay by the 15th.",
+   "You can also drop it off at any local post office with our return label.",
+   "We\u2019ll send another notice if it hasn\u2019t been paid by the end of the month.",
+   "Feel free to call back if you\u2019ve got questions \u2014 we\u2019re here to help.",
+   "Thanks for keeping your account up to date \u2014 we appreciate it."
+  ]
+ },
+ {
+  "id": "real_bank_alert_0",
+  "kind": "normal",
+  "type": "real_bank_alert",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the bank calling about a small charge on your account that looked a little out of the ordinary.",
+   "We saw a $12 transaction at a hardware store in Bakersfield, and you haven\u2019t shopped there before, so we wanted to check in.",
+   "Nothing\u2019s been blocked yet, but we just want to make sure it was you before we let it go through.",
+   "If you didn\u2019t make that purchase, we can cancel it right away\u2014no need to worry.",
+   "Just to be safe, we recommend calling the number on the back of your card to confirm this is okay.",
+   "We\u2019ll never ask you for your PIN, password, or any codes over the phone, so don\u2019t give those out to anyone.",
+   "If it was you, no action is needed\u2014we\u2019ll just note it and move on.",
+   "I\u2019m not asking you to do anything right now, just keep this in mind and double-check with the number on your card.",
+   "Thanks for your time, and please remember: if something feels off, call us back using the number on your card."
+  ]
+ },
+ {
+  "id": "real_bank_alert_1",
+  "kind": "normal",
+  "type": "real_bank_alert",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is a call from your bank about a small charge we noticed on your account.",
+   "There was a $12 transaction at a grocery store in Springfield that doesn\u2019t match your usual spending.",
+   "We\u2019re just checking in to make sure this was you before we let it go through.",
+   "You don\u2019t need to call us back right away\u2014you can wait until you\u2019re settled somewhere quiet.",
+   "If you\u2019re not sure, just look at the back of your card and call the number printed there.",
+   "We never ask for your PIN, password, or one-time code over the phone, so don\u2019t give those out.",
+   "This charge might be a clerical error\u2014it happens sometimes with automated payments.",
+   "We\u2019ve paused the transaction for now, so there\u2019s no urgency, but we\u2019d appreciate knowing if it was you.",
+   "You can also log into your online account to check the details\u2014there\u2019s a timestamp and location shown.",
+   "If it wasn\u2019t you, we\u2019ll handle it from here\u2014no need to worry about getting your money back.",
+   "Thanks for taking the time to listen, and please give your card\u2019s helpline a call if anything feels off."
+  ]
+ },
+ {
+  "id": "real_bank_alert_2",
+  "kind": "normal",
+  "type": "real_bank_alert",
+  "split": "test",
+  "sentences": [
+   "Hi, this is a call from our fraud team\u2014we noticed a small charge at a grocery store in Springfield that doesn\u2019t match your usual spending.",
+   "It was for $4.75, just a few items, but we\u2019re double-checking to make sure it\u2019s really you.",
+   "We didn\u2019t block your card yet, but we\u2019re asking you to take a quick look at your recent transactions.",
+   "If you didn\u2019t make this purchase, just call the number on the back of your card\u2014we\u2019ll help sort it out.",
+   "We\u2019re not asking for any passwords, PINs, or codes\u2014just confirming it\u2019s you.",
+   "Sometimes these charges happen when someone uses a card at a gas station or a small local store nearby.",
+   "You might\u2019ve forgotten you paid with your card last week at the corner market.",
+   "We\u2019re just being careful, so you don\u2019t get stuck with charges you didn\u2019t authorize.",
+   "If it looks right, you can ignore this call\u2014no action needed on your part.",
+   "If it doesn\u2019t look right, just pick up the phone and dial the number on your card\u2014we\u2019re here to help.",
+   "We don\u2019t call to ask for personal details\u2014your security is our top priority.",
+   "You\u2019ve got nothing to worry about if this was your purchase.",
+   "Thanks for your time\u2014we appreciate you watching out for your account."
+  ]
+ },
+ {
+  "id": "real_bank_alert_3",
+  "kind": "normal",
+  "type": "real_bank_alert",
+  "split": "test",
+  "sentences": [
+   "Hi, this is calling about a small charge on your account that seems out of the ordinary.",
+   "It was for $12.50 at a gas station in Grand Rapids, and you haven\u2019t been there in weeks, right?",
+   "We\u2019re just checking in to make sure this was you before we look into it further.",
+   "If this wasn\u2019t you, we can block it and get the money back without any hassle.",
+   "Please don\u2019t give out any numbers or codes\u2014no one from the bank will ever ask for those.",
+   "The best thing to do is call the number on the back of your card, just to be safe.",
+   "It\u2019s a simple process\u2014we\u2019ll walk you through it step by step once you call.",
+   "If you did make the purchase, just say so, and we\u2019ll note it down so it doesn\u2019t happen again.",
+   "Thanks for taking the time to double-check\u2014this kind of attention really helps keep things secure."
+  ]
+ },
+ {
+  "id": "real_bank_alert_4",
+  "kind": "normal",
+  "type": "real_bank_alert",
+  "split": "test",
+  "sentences": [
+   "Hi, this is your bank calling about a small charge on your account earlier today.",
+   "We noticed a $12.50 transaction at a gas station in Maplewood, which seems unusual for you.",
+   "You haven\u2019t made any purchases there before, so we wanted to double-check it was you.",
+   "We\u2019re not asking for any passwords or PINs\u2014just to let you know so you can review it.",
+   "If you didn\u2019t make that charge, there\u2019s no rush, but it\u2019s smart to look into it.",
+   "The best way to follow up is to call the number on the back of your card.",
+   "No one from the bank will ever call and ask you for your full card number or security code.",
+   "This alert is just a heads-up\u2014your account is still safe and nothing\u2019s been changed yet.",
+   "You can also log in to your online statement to see the exact time and location.",
+   "If you\u2019re unsure, just call us back using the number on your card\u2014that\u2019s the safest way.",
+   "Thanks for taking a minute to check this out\u2014we appreciate your attention to your account."
+  ]
+ },
+ {
+  "id": "honest_grandchild_0",
+  "kind": "normal",
+  "type": "honest_grandchild",
+  "split": "dev",
+  "sentences": [
+   "Hey Grandma, it\u2019s me, Alex\u2014just calling to say hi before I head to class.",
+   "I\u2019m kinda short on cash this week, and I was wondering if you could lend me twenty bucks?",
+   "I need it for lunch this week\u2014my meal plan ran out early, and the cafeteria\u2019s been pricey.",
+   "I promise I\u2019ll pay you back by Friday, I\u2019ve got my shift at the bike shop that day.",
+   "I know it\u2019s a small thing, but it\u2019d really help me out till then.",
+   "I didn\u2019t want to ask over text in case you didn\u2019t see it, thought I\u2019d call you instead.",
+   "You always know how to make me feel better when I\u2019m stressed, even with a little cash.",
+   "I\u2019ll send you a pic of what I ate today\u2014I tried the grilled cheese, it was actually good.",
+   "Thanks, Grandma. I really appreciate you, and I\u2019ll call again Saturday with an update."
+  ]
+ },
+ {
+  "id": "honest_grandchild_1",
+  "kind": "normal",
+  "type": "honest_grandchild",
+  "split": "dev",
+  "sentences": [
+   "Hey Grandma, it's me, Kyle.",
+   "I know I just called yesterday, but I\u2019m kinda in a pinch right now.",
+   "I forgot my lunch money again, and the cafeteria won\u2019t let me skip this week.",
+   "Could you lend me twenty bucks? I\u2019ll pay you back Friday after my shift.",
+   "I promise, I\u2019ve got my paycheck coming in, and I\u2019m not asking anyone else.",
+   "It\u2019s just for a few days\u2014I\u2019m eating peanut butter sandwiches till then.",
+   "You don\u2019t gotta send it now, just whenever you get a chance.",
+   "I\u2019ll text you the exact time I\u2019m gonna be back home to pick it up.",
+   "I miss your cooking, honestly. Thought I\u2019d ask you instead of ramen again.",
+   "I love you, Grandma. Don\u2019t worry, I\u2019m not in trouble or anything.",
+   "I\u2019ll call you again Friday to say thanks\u2014and to tell you about the nachos I bought."
+  ]
+ },
+ {
+  "id": "honest_grandchild_2",
+  "kind": "normal",
+  "type": "honest_grandchild",
+  "split": "test",
+  "sentences": [
+   "Hey Grandma, it's Jamie, just calling to say hi before I rush off to class.",
+   "I\u2019m kinda low on cash this week\u2014my wallet got stolen at the bus stop yesterday.",
+   "Would you mind if I borrowed twenty bucks till Friday? I\u2019ll pay you back straight away.",
+   "I\u2019m trying to keep it light this week\u2014only need it for a few lunches and coffee.",
+   "I know you\u2019ve been careful with your money, and I wouldn\u2019t ask if it wasn\u2019t urgent.",
+   "I\u2019ve got my part-time job starting again Friday, so it\u2019s just a quick holdover.",
+   "I didn\u2019t wanna call Dad first \u2018cause he\u2019s been extra busy lately.",
+   "I\u2019ve got a stack of homework and no way to eat without a little help right now.",
+   "I promise I\u2019ll text you a picture of my meal when I finally eat something good.",
+   "If it\u2019s easier, I can even write you a IOU\u2014I\u2019ll doodle it on a napkin and snap it.",
+   "I know it\u2019s a strange ask, but you\u2019re the only one I\u2019d feel comfy asking.",
+   "I miss your cooking, honestly. Maybe I can come over and eat some of that chili soon?",
+   "Thanks for even listening, Grandma\u2014I really appreciate you."
+  ]
+ },
+ {
+  "id": "honest_grandchild_3",
+  "kind": "normal",
+  "type": "honest_grandchild",
+  "split": "test",
+  "sentences": [
+   "Hey Grandma, it\u2019s me, Tommy, just wanted to say hi before I head to class.",
+   "I\u2019m kind of low on cash this week\u2014my wallet got lost at the library yesterday.",
+   "Do you think you could slide me twenty bucks just till Friday? I\u2019ll pay you back right away.",
+   "I\u2019ve got a lunch shift at the community center, and I really need to cover my meal pass.",
+   "I know it\u2019s last minute, but I\u2019m stuck until I can get my next paycheck.",
+   "I\u2019d really appreciate it, and I promise I\u2019ll call you back Friday with a big thank-you.",
+   "I\u2019m not asking for much, just enough to grab a sandwich and not skip meals.",
+   "You\u2019re the best, Grandma\u2014I\u2019ll send you a picture of my lunch when I get it.",
+   "Love you, and I\u2019ll talk to you tomorrow before dinner, okay?"
+  ]
+ },
+ {
+  "id": "honest_grandchild_4",
+  "kind": "normal",
+  "type": "honest_grandchild",
+  "split": "test",
+  "sentences": [
+   "Hey Grandma, it's me, Jamie.",
+   "Just calling to say hi and see how you're doing this week.",
+   "I know this is kind of random, but could you help me out with twenty bucks?",
+   "I spilled coffee on my laptop yesterday and had to pay to get it fixed.",
+   "My roommate\u2019s paying me back Friday, so I\u2019ll pay you back right away.",
+   "It\u2019s just for lunch money this week\u2014I\u2019ve been skipping meals trying to save.",
+   "I didn\u2019t want to ask Mom, I knew you\u2019d understand.",
+   "I\u2019ll text you the receipt from the repair shop if you want to see it.",
+   "No pressure at all, but if you can, it\u2019d mean a lot.",
+   "I\u2019ll call you again Friday to thank you and tell you how the food was.",
+   "Love you, Grandma."
+  ]
+ },
+ {
+  "id": "doctor_appointment_0",
+  "kind": "normal",
+  "type": "doctor_appointment",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is Margaret calling about my appointment next Tuesday?",
+   "I got a note saying you might need to move it because of staffing changes?",
+   "Oh, you want to shift it to Thursday at 3 PM? That works fine, thanks for checking.",
+   "I just wanted to make sure there\u2019s still a small fee when I come in?",
+   "Yeah, I remember last time it was ten dollars, is it the same this go-round?",
+   "I\u2019ve got that ready in cash, no problem at all.",
+   "You said I don\u2019t need to bring anything else besides my ID and the payment?",
+   "Alright, I\u2019ll see you Thursday then\u2014just to confirm, it\u2019s the main building, not the annex?",
+   "Thanks so much for calling and making sure I\u2019m all set, I appreciate it."
+  ]
+ },
+ {
+  "id": "doctor_appointment_1",
+  "kind": "normal",
+  "type": "doctor_appointment",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is Margaret calling about my check-up next Wednesday.",
+   "I got a message that you\u2019re moving my appointment to Friday at 2 p.m. Is that right?",
+   "I\u2019m glad you called\u2014I was worried I might miss it with my hearing aid acting up.",
+   "There\u2019s a small fee when I come in, right? I think it\u2019s around twenty dollars.",
+   "I\u2019ve got the cash ready, just in case you don\u2019t take cards anymore.",
+   "I\u2019ve been keeping my blood pressure meds on schedule like you asked.",
+   "No need to send me anything in the mail\u2014just tell me what to bring.",
+   "I\u2019ll bring my list of pills and my old report from last fall.",
+   "I don\u2019t have a car right now, but my niece is driving me over.",
+   "You said not to bring my dog, but I\u2019ll leave him at home, don\u2019t worry.",
+   "Thanks for calling back\u2014I know you\u2019re busy, and I appreciate it."
+  ]
+ },
+ {
+  "id": "doctor_appointment_2",
+  "kind": "normal",
+  "type": "doctor_appointment",
+  "split": "test",
+  "sentences": [
+   "Hi, this is Martha calling about my appointment next Wednesday.",
+   "I got a note saying you wanted to move it to Thursday, is that right?",
+   "Yeah, we just updated our system and your slot got shifted by a day.",
+   "I\u2019m fine with Thursday\u2014just wanted to make sure I didn\u2019t miss anything.",
+   "There\u2019s a small copay when you check in, about twelve bucks.",
+   "It\u2019s not the full amount, just what your plan requires at the time of visit.",
+   "You won\u2019t need to pay anything online or over the phone, just here.",
+   "We\u2019re still using the same room on the second floor, same as before.",
+   "If you come in early, the nurse might take your blood pressure right away.",
+   "Bring your insurance card and the ID you used when you signed up.",
+   "I know you\u2019ve got a hard time remembering these details, so I\u2019m glad you called.",
+   "No need to cancel anything\u2014it\u2019s all sorted, just moved to Thursday.",
+   "Thanks for calling back, Martha. We\u2019ll see you then."
+  ]
+ },
+ {
+  "id": "doctor_appointment_3",
+  "kind": "normal",
+  "type": "doctor_appointment",
+  "split": "test",
+  "sentences": [
+   "Hi, this is Margaret calling about my appointment next Tuesday.",
+   "I got a notice saying my visit got moved to Wednesday at 3 p.m., is that right?",
+   "I was just wondering if anything changed about what I need to bring with me.",
+   "They mentioned a small fee when I check in\u2014something like seven dollars?",
+   "Is that for the visit itself or just for the lab tests they want to do?",
+   "I don\u2019t remember being told about this before, so I just wanted to double-check.",
+   "I\u2019ve got my insurance card and my list of meds, but should I bring anything else?",
+   "If I don\u2019t have the cash, can I pay with my debit card at the front desk?",
+   "Thanks for clearing that up\u2014I\u2019ll be there Wednesday, and I\u2019ll have the money ready."
+  ]
+ },
+ {
+  "id": "doctor_appointment_4",
+  "kind": "normal",
+  "type": "doctor_appointment",
+  "split": "test",
+  "sentences": [
+   "Hi, this is Eleanor calling about my appointment next Wednesday.",
+   "We\u2019re just moving it to Thursday at 2:15, since the doc had an emergency yesterday.",
+   "No worries, your original time slot was 10 a.m., so we shifted you a little later.",
+   "You\u2019ll still see Dr. Reynolds, same room, same nurse\u2014you\u2019re all set.",
+   "The copay is just $12 this time, not the usual $20, since we\u2019re doing a quick follow-up.",
+   "We\u2019ll have your card on file, but if you\u2019d rather pay at the desk, that\u2019s fine too.",
+   "Just bring your insurance card, and we\u2019ll be all set\u2014you don\u2019t need anything else.",
+   "We\u2019ve sent a text reminder, but I wanted to call in case you missed it.",
+   "If you can\u2019t make Thursday, give us a call by tomorrow afternoon, okay?",
+   "No need to cancel, we\u2019re just moving it\u2014it\u2019s not a cancellation, just a shift.",
+   "Thanks so much, Eleanor. We\u2019ll see you Thursday, and take care on your way in."
+  ]
+ },
+ {
+  "id": "delivery_driver_0",
+  "kind": "normal",
+  "type": "delivery_driver",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the delivery person, I\u2019ve got a package for you but I\u2019m not sure where to leave it.",
+   "The notice said to leave it by the back gate, but I\u2019m seeing a bunch of boxes already there.",
+   "Could you tell me if it\u2019s okay to put it by the red bench near the shed?",
+   "I don\u2019t wanna leave it where it might get wet, the sky\u2019s looking a little gray.",
+   "I seen your neighbor got theirs under the porch, is that where yours should go too?",
+   "I\u2019ve got three more stops after this, so if you could just quick tell me where, that\u2019d help a lot.",
+   "I didn\u2019t get any message on the app, so I\u2019m just double-checking before I drop it.",
+   "You\u2019re the only one here with a name tag by the door, so I figured I\u2019d ask you direct.",
+   "I\u2019ll just slip it where you say, no need to come out\u2014I\u2019ll wait right here till you say."
+  ]
+ },
+ {
+  "id": "delivery_driver_1",
+  "kind": "normal",
+  "type": "delivery_driver",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the delivery guy, I've got a package here for you at 42 Maple Lane.",
+   "I'm at the front gate but I can't see anyone, mind if I leave it by the back porch?",
+   "The label says it's for someone named Martha, is that you?",
+   "I've got a couple of boxes here, and one's pretty heavy, so I want to make sure I put it where you want.",
+   "I know sometimes people ask for it to be left with a neighbor, but I don't see anyone around.",
+   "Can you tell me if there's a covered spot near the shed or by the garage?",
+   "I'm in a hurry, but I don't want to leave it where it might get wet or stolen.",
+   "Are you sure I shouldn't knock? I could wait a minute if you're home.",
+   "I saw your name on the roster, but the address is a little tricky\u2014can you confirm it's the blue house with the white fence?",
+   "I don't want to leave it out front, but the side path\u2019s muddy right now, so I need your advice.",
+   "Just need a quick word so I can log this delivery and head out\u2014I appreciate your time."
+  ]
+ },
+ {
+  "id": "delivery_driver_2",
+  "kind": "normal",
+  "type": "delivery_driver",
+  "split": "test",
+  "sentences": [
+   "Hi, this is a courier checking on a package for Mary Johnson at 42 Willow Lane?",
+   "I\u2019ve got it here but the gate\u2019s locked and there\u2019s no one answering the door.",
+   "I was wondering if you\u2019d mind telling me where to leave it\u2014back porch, side shed, or maybe with a neighbor?",
+   "The package\u2019s a little bulky, so I can\u2019t just set it on the step without it getting wet.",
+   "I see the order says it was meant for Tuesday, and it\u2019s already past noon now.",
+   "I don\u2019t want to leave it unattended, especially with all the storms lately.",
+   "I checked the address again\u2014yep, 42 Willow Lane, that\u2019s right, right?",
+   "I know you\u2019re not the one who ordered it, but maybe you know where the recipient usually leaves things?",
+   "I\u2019ve got three more stops after this and I\u2019m running behind, so a quick tip\u2019d help.",
+   "I heard the person who lives there might be out of town this week\u2014any idea?",
+   "I\u2019d hate to have to take it back and have them miss their medicine delivery.",
+   "If you\u2019re unsure, I can just ring the bell one more time before I go.",
+   "I appreciate you taking a minute\u2014I know you\u2019re busy, but this means a lot."
+  ]
+ },
+ {
+  "id": "delivery_driver_3",
+  "kind": "normal",
+  "type": "delivery_driver",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the driver for that big box you ordered, where should I leave it?",
+   "I\u2019m out front by the big oak tree, but I don\u2019t see a porch or a mailbox.",
+   "The person who ordered it said to leave it by the garage, but there\u2019s two garages here.",
+   "I\u2019ve got a delivery with your name and the date, but I need to be sure before I drop it.",
+   "It\u2019s heavy, and I\u2019d hate to leave it where it might get wet or stolen.",
+   "Is there a side gate? Or maybe the back door near the red shutters?",
+   "I checked the note, and it just says \u2018front area\u2019\u2014that\u2019s not helping much.",
+   "I can hold onto it a bit longer if you need to double-check where you\u2019d like it.",
+   "Just tell me where\u2019s safe and not on the street, and I\u2019ll get it done right away."
+  ]
+ },
+ {
+  "id": "delivery_driver_4",
+  "kind": "normal",
+  "type": "delivery_driver",
+  "split": "test",
+  "sentences": [
+   "Hi, this is the delivery guy, I'm here with a package for 42 Oakridge Lane, but I\u2019m not sure where to leave it.",
+   "The person who ordered it said to leave it by the back gate, but I don\u2019t see any gate around here.",
+   "Is it near the purple mailbox? That\u2019s what the note said, but the mailbox here is blue.",
+   "I\u2019ve got a picture here of the front porch, and there\u2019s a rocking chair\u2014do you see that?",
+   "I could leave it under the awning if that\u2019s okay, or maybe by the side door?",
+   "The label says it\u2019s a large box, so I don\u2019t want to leave it where it might get wet.",
+   "Could you tell me if there\u2019s a concrete step near the garage? That\u2019s where I thought it was supposed to go.",
+   "I don\u2019t want to knock on the door if no one\u2019s home, so I\u2019m just trying to figure out a safe spot.",
+   "I\u2019ve got three more stops after this, so I\u2019d appreciate if you could help me out quick.",
+   "The person who ordered this said it\u2019s fragile, so I don\u2019t want to leave it on the lawn.",
+   "If you could just point me to the right spot, I\u2019ll be on my way\u2014thanks so much."
+  ]
+ },
+ {
+  "id": "family_chat_0",
+  "kind": "normal",
+  "type": "family_chat",
+  "split": "dev",
+  "sentences": [
+   "Hey Mom, how\u2019s the garden coming along this week?",
+   "I was just thinking\u2014Dad\u2019s birthday is coming up, and we should do something fun for him.",
+   "I\u2019ve got a little surprise planned, but you\u2019ve got to promise not to say a word.",
+   "We\u2019re thinking of having a small get-together at the lakeside cabin, just close family.",
+   "I\u2019ll handle all the arrangements, but I need you to keep it under your hat.",
+   "Don\u2019t mention anything even if he asks why you\u2019ve been acting weird lately.",
+   "I know it\u2019s tricky, but if you slip up, he\u2019ll guess right away and it\u2019ll ruin everything.",
+   "I promise it\u2019ll be worth it\u2014he\u2019ll be shocked in the best way.",
+   "And hey, if you see him heading out on Saturday, just say you\u2019re running errands, okay?"
+  ]
+ },
+ {
+  "id": "family_chat_1",
+  "kind": "normal",
+  "type": "family_chat",
+  "split": "dev",
+  "sentences": [
+   "Hey Mom, just wanted to check in before you head out to grocery shopping.",
+   "I know you\u2019re planning to stop by the bakery this afternoon, but please don\u2019t mention anything about Saturday.",
+   "Dad\u2019s birthday is coming up, and we\u2019re throwing him a little surprise, so keep it quiet.",
+   "I don\u2019t want him to catch on before the big day \u2014 he\u2019s got that sixth sense about things.",
+   "We\u2019re doing it at the community center, not here, so he won\u2019t get suspicious.",
+   "I\u2019ve got Uncle Rick helping with the cake, and I asked the neighbor to bring her pies.",
+   "Don\u2019t even say \u2018party\u2019 or \u2018celebration\u2019 around him \u2014 he\u2019ll know something\u2019s up.",
+   "I know you love to talk, but this one\u2019s our secret, just between you and me.",
+   "I\u2019ll send you the list of what to bring later, but don\u2019t write it down where he might see.",
+   "If he asks why you\u2019re unusually quiet this week, just say you\u2019re tired from gardening.",
+   "Thanks, Mom. You\u2019re the best at keeping a secret \u2014 I promise I\u2019ll make it worth your while."
+  ]
+ },
+ {
+  "id": "family_chat_2",
+  "kind": "normal",
+  "type": "family_chat",
+  "split": "test",
+  "sentences": [
+   "Hey Mom, just calling to check in before the weekend.",
+   "I know you\u2019re planning that surprise for Dad, and I really appreciate it.",
+   "Just a quick reminder \u2014 don\u2019t mention it to him, not even a hint.",
+   "We\u2019re all flying in Friday night, so keep him busy Saturday morning.",
+   "I\u2019ve got the cake from that little bakery on Maple, not the one downtown.",
+   "The music playlist is set up on the speaker in the living room, no need to touch it.",
+   "Aunt Linda\u2019s bringing the photos, so don\u2019t worry about printing anything.",
+   "I know you love giving him extra hugs, but maybe save that for after eight.",
+   "We\u2019re all gonna hide in the garage till he walks in \u2014 you\u2019re the only one who gets to welcome him.",
+   "If he asks what we\u2019re up to, just say we\u2019re tidying up your garden shed.",
+   "The neighbors won\u2019t know a thing, I made sure of that.",
+   "He\u2019s gonna love it, Mom. You\u2019ve got the best timing for surprises.",
+   "Thanks for keeping this quiet \u2014 I\u2019ll call you Sunday night after he\u2019s asleep."
+  ]
+ },
+ {
+  "id": "family_chat_3",
+  "kind": "normal",
+  "type": "family_chat",
+  "split": "test",
+  "sentences": [
+   "Hey Mom, just wanted to check in before I head out to the store.",
+   "I know you're not supposed to mention it, but Dad\u2019s gonna be so shocked this weekend.",
+   "We\u2019ve got everything set up at Mike\u2019s place, and no one else knows a thing.",
+   "I even got those blue balloons you like, not the red ones he always picks.",
+   "Don\u2019t tell him about the cake\u2014I baked it myself, and it\u2019s kinda lopsided but tasty.",
+   "We\u2019re keeping it quiet till Sunday, so don\u2019t say a word at bridge club.",
+   "I\u2019ll swing by Thursday with the surprise box, just leave the door unlocked.",
+   "And remember, if anyone asks why you\u2019re acting weird, blame it on that new tea you\u2019re drinking.",
+   "Love you, Mom\u2014and don\u2019t you dare ruin it, okay?"
+  ]
+ },
+ {
+  "id": "insurance_premium_0",
+  "kind": "normal",
+  "type": "insurance_premium",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is the insurance office calling about your monthly payment.",
+   "Just wanted to confirm you're still paying $142 every first of the month.",
+   "We\u2019ve got it set to come out automatically from your bank.",
+   "No changes needed, but I\u2019m checking in to make sure everything\u2019s still good.",
+   "It\u2019s been running like that since last spring, right?",
+   "If you ever want to switch banks or adjust the amount, just give us a ring.",
+   "We don\u2019t send out paper bills anymore, but you can check online if you\u2019d like.",
+   "I know some folks get nervous when they see charges they don\u2019t remember.",
+   "You\u2019re all set\u2014no action needed on your part, and thanks for keeping it up."
+  ]
+ },
+ {
+  "id": "insurance_premium_1",
+  "kind": "normal",
+  "type": "insurance_premium",
+  "split": "dev",
+  "sentences": [
+   "Hi, this is a quick call just to confirm your monthly payment is still set at $245.",
+   "I'm checking in because we noticed your autopay hasn't updated in a few months.",
+   "Your last payment went through on the 12th, just like usual, so everything looks good.",
+   "We don\u2019t need any new info from you\u2014your card\u2019s still on file the same way.",
+   "If anything changes, like a new bank or address, let us know before the next one.",
+   "No surprises coming, you\u2019re all set through next year with no changes.",
+   "Just wanted to give you a heads-up so you don\u2019t get confused if you see the same amount again.",
+   "You\u2019ve been paying this amount since last June, and it hasn\u2019t moved since.",
+   "If you ever have questions, you can always call back\u2014no need to wait for us.",
+   "We appreciate you staying on autopay, makes things easier for everyone.",
+   "Thanks for your time, and have a good rest of your day."
+  ]
+ },
+ {
+  "id": "insurance_premium_2",
+  "kind": "normal",
+  "type": "insurance_premium",
+  "split": "test",
+  "sentences": [
+   "Hi, this is calling about your monthly payment for your policy.",
+   "I'm just checking in to confirm we're still charging $147 every first of the month.",
+   "You\u2019ve got it set up to auto-pay from your bank, right?",
+   "We haven't had any issues with the last few payments, just wanted to make sure nothing changed.",
+   "It\u2019s been going through fine since last January.",
+   "No need to do anything unless you\u2019ve switched banks or changed your mind.",
+   "I know these things can be easy to forget, so I\u2019m just giving you a heads-up.",
+   "If you ever have a question later, you can call this number anytime.",
+   "We don\u2019t send out paper bills anymore unless you ask for them.",
+   "Your account\u2019s all good, nothing to worry about.",
+   "Thanks for keeping up with your payments, it helps us keep things running smooth.",
+   "And just so you know, the amount won\u2019t change unless you add or drop coverage.",
+   "Have a good day, and don\u2019t hesitate to reach out if anything looks off."
+  ]
+ },
+ {
+  "id": "insurance_premium_3",
+  "kind": "normal",
+  "type": "insurance_premium",
+  "split": "test",
+  "sentences": [
+   "Hi, this is calling about your monthly payment for the policy you've got set up.",
+   "Just wanted to make sure you still remember we\u2019re pulling $87 every month from your account.",
+   "It\u2019s been automatic since last November, and everything\u2019s still working fine.",
+   "No changes coming up, and you won\u2019t get a bill unless something\u2019s different.",
+   "If you ever need to switch banks or stop it, you\u2019ve got to call us before the 25th.",
+   "Some folks get worried when they see the charge, so I\u2019m just checking in to say it\u2019s normal.",
+   "You\u2019ve got a good track record\u2014no missed payments, no delays.",
+   "We don\u2019t call often, but I figured a quick heads-up beats a surprise later.",
+   "Thanks for sticking with it, and let me know if you\u2019ve got any questions at all."
+  ]
+ },
+ {
+  "id": "insurance_premium_4",
+  "kind": "normal",
+  "type": "insurance_premium",
+  "split": "test",
+  "sentences": [
+   "Hi, this is calling about your monthly payment for the insurance plan you've got set up.",
+   "Just wanted to confirm it's still $217 coming out on the 15th like it always does.",
+   "No changes this month, but I\u2019m double-checking so nothing slips through.",
+   "I see it\u2019s still tied to the same account ending in 4822, is that right?",
+   "You haven\u2019t called in about any tweaks, so we\u2019re keeping things as they are.",
+   "Sometimes people forget they switched banks, so I just wanted to make sure you\u2019re all set.",
+   "It\u2019s been running smoothly since last January, right?",
+   "No need to do anything \u2014 it\u2019s all automated, but I like to give a quick heads-up.",
+   "If you ever wanted to adjust it, you\u2019d need to call back, but no need now.",
+   "You\u2019ve got a good system going, and we appreciate you staying on top of it.",
+   "Thanks for your time \u2014 have a peaceful evening."
+  ]
+ }
+]

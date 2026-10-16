@@ -1,0 +1,8 @@
+# Gate numbers tuned on the dev calls and used for every benchmark number in bench/results/summary.json.
+# The demo sessions use the shipped defaults in patterns/rolling_risk_gate/thresholds.yaml.
+attack: 0.5
+release: 0.08
+active_above: 0.25
+inactive_below: 0.125
+min_groups_for_red: 2
+amber_risk: 0.2
