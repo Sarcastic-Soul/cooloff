@@ -1,0 +1,7 @@
+# All gate numbers in one place. Loaded by patterns.rolling_risk_gate.load_config().
+attack: 0.7           # how fast a signal level rises (times confidence)
+release: 0.12         # how fast it falls on calm sentences
+active_above: 0.30    # signal active at or above
+inactive_below: 0.15   # signal inactive below
+min_groups_for_red: 2 # independent groups needed for red
+amber_risk: 0.20      # overall risk that gives amber with no active signal
